@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aftershock Tiers — Leaderboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #09090f;
+      --surface:   #111118;
+      --surface2:  #18181f;
+      --surface3:  #1e1e28;
+      --border:    rgba(99,59,196,0.18);
+      --border2:   rgba(99,59,196,0.35);
+      --text:      #e8ecff;
+      --muted:     #6b738f;
+      --gold:      #f5c842;
+      --silver:    #b0bcd4;
+      --bronze:    #c87840;
+      --rank1-bg:  #c8960a;
+      --rank2-bg:  #5a7090;
+      --rank3-bg:  #8c6030;
+      --blue:      #5b8dee;
+      --green:     #3cde7e;
+      --red:       #e05050;
+      --violet:    #7c3aed;
+      --violet-lt: #a78bfa;
+      --indigo:    #312e81;
+      --mono:      'Space Mono', monospace;
+      --sans:      'Inter', system-ui, sans-serif;
+      --radius:    12px;
+      --radius-lg: 14px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      min-height: 100vh;
+      background-image:
+        linear-gradient(105deg, rgba(0,0,0,0) 40px, rgba(124,58,237,0.05) 40px, rgba(124,58,237,0.05) 42px, rgba(0,0,0,0) 42px),
+        linear-gradient(105deg, rgba(0,0,0,0) 110px, rgba(124,58,237,0.03) 110px, rgba(124,58,237,0.03) 112px, rgba(0,0,0,0) 112px),
+        linear-gradient(105deg, rgba(0,0,0,0) 190px, rgba(124,58,237,0.05) 190px, rgba(124,58,237,0.05) 192px, rgba(0,0,0,0) 192px);
+      background-size: 240px 400px;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: linear-gradient(rgba(9,9,15,0.55), rgba(9,9,15,0.55)), url('/static/bg.gif') center/cover no-repeat;
+      border: 1px solid var(--border);
+      padding: 10px 1.25rem;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 8px 32px rgba(109,40,217,0.18);
+      border-radius: 0 0 18px 18px;
+      margin: 0 10px;
+    }
+    .header-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      height: 72px;
+    }
+    .logo {
+      height: 44px;
+      width: auto;
+      flex-shrink: 0;
+      object-fit: contain;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      margin-left: 16px;
+      flex-shrink: 0;
+    }
+    .nav-link {
+      display: flex; align-items: center; gap: 5px;
+      padding: 6px 10px;
+      font-size: 14px; font-weight: 500;
+      color: var(--muted);
+      border-radius: 8px;
+      text-decoration: none;
+      transition: color 0.15s, background 0.15s;
+      white-space: nowrap;
+    }
+    .nav-link.active { color: var(--violet-lt); }
+    .nav-link:hover { background: rgba(124,58,237,0.08); color: var(--violet-lt); }
+    .search-wrap { flex: 1; position: relative; }
+    .search-wrap svg {
+      position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+      width: 16px; height: 16px; color: var(--muted); pointer-events: none;
+    }
+    .search-input {
+      width: 100%;
+      background: rgba(124,58,237,0.06);
+      border: 1px solid var(--border2);
+      border-radius: 999px;
+      padding: 8px 16px 8px 36px;
+      font-family: var(--sans);
+      font-size: 13px;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .search-input::placeholder { color: var(--muted); }
+    .search-input:focus { border-color: rgba(124,58,237,0.5); box-shadow: 0 0 0 3px rgba(124,58,237,0.1); }
+    .search-kbd {
+      position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+      background: var(--surface2); border: 1px solid var(--border2);
+      color: var(--muted); font-size: 11px; font-family: var(--mono);
+      padding: 2px 6px; border-radius: 5px; pointer-events: none;
+    }
+
+    /* ── TABS ── */
+    .tabs-wrap {
+      background: rgba(9,9,15,0.95);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+      margin-top: 3rem;
+    }
+    .tabs-wrap::-webkit-scrollbar { display: none; }
+    .tabs-inner {
+      max-width: 920px; margin: 0 auto;
+      display: flex; gap: 8px; align-items: flex-end;
+      padding: 8px 0 0;
+      position: relative;
+    }
+    @keyframes gold-shine {
+      0%   { color: #b8860b; text-shadow: 0 0 8px rgba(184,134,11,0.4); }
+      50%  { color: #ffd700; text-shadow: 0 0 24px rgba(255,215,0,0.9), 0 0 48px rgba(255,215,0,0.4); }
+      100% { color: #b8860b; text-shadow: 0 0 8px rgba(184,134,11,0.4); }
+    }
+    .season-badge {
+      margin-left: auto;
+      font-size: 11px; font-weight: 900; font-style: italic;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 6px;
+      background: rgba(184,134,11,0.12); border: 1px solid rgba(184,134,11,0.3);
+      white-space: nowrap; align-self: center;
+      animation: gold-shine 2.4s ease-in-out infinite;
+    }
+    .tab {
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+      padding: 10px 0;
+      width: 97px;
+      min-width: 97px;
+      font-size: 11px; font-weight: 700; color: var(--muted);
+      cursor: pointer;
+      border-radius: 14px 14px 0 0;
+      background: rgba(255,255,255,0.05);
+      white-space: nowrap;
+      transition: color 0.15s, background 0.15s;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      user-select: none;
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .tab:hover { color: var(--violet-lt); background: rgba(255,255,255,0.08); }
+    .tab.active { color: #fff; background: rgba(138,99,210,0.22); box-shadow: 0 0 0 1.5px rgba(138,99,210,0.5); }
+    .tab-icon {
+      width: 28px; height: 28px;
+      object-fit: contain;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    /* ── SERVER BANNER ── */
+    .server-banner {
+      max-width: 920px;
+      margin: 4px auto 0;
+      padding: 10px 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .info-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 12px; font-weight: 600; color: var(--text);
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      position: relative;
+    }
+    .info-btn:hover { border-color: var(--violet-lt); background: var(--surface3,#23263a); }
+    .info-btn svg { width: 14px; height: 14px; color: var(--violet-lt); }
+
+    /* ── Info Panel ── */
+    .info-panel-wrap { position: relative; }
+    .info-panel {
+      display: none;
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      z-index: 999;
+      width: 340px;
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+      overflow: hidden;
+      animation: fadeDown 0.18s ease;
+    }
+    .info-panel.open { display: block; }
+    @keyframes fadeDown { from { opacity:0; transform:translateY(-6px); } to { opacity:1; transform:translateY(0); } }
+    .info-tabs {
+      display: flex;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border2);
+      border-radius: 10px 10px 0 0;
+      padding: 6px;
+      gap: 4px;
+    }
+    .info-tab {
+      flex: 1; text-align: center;
+      padding: 8px 0;
+      border-radius: 8px;
+      font-size: 13px; font-weight: 600; color: var(--muted);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      background: transparent; border: none;
+    }
+    .info-tab.active { background: var(--surface2); color: var(--text); }
+    .info-tab:not(.active):hover { color: var(--text); background: var(--surface3,#23263a); }
+    .info-body { padding: 18px 18px 14px; max-height: 420px; overflow-y: auto; }
+    .info-body h3 {
+      font-size: 15px; font-weight: 700; color: var(--text);
+      margin: 0 0 16px;
+    }
+    .info-body h3 u { text-decoration-color: var(--violet-lt); }
+    .info-tab-content { display: none; }
+    .info-tab-content.active { display: block; }
+
+    /* Titles tab */
+    .title-item { display: flex; flex-direction: column; margin-bottom: 14px; }
+    .title-item-name {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 14px; font-weight: 700;
+    }
+    .title-item-desc { font-size: 12px; color: var(--muted); margin-top: 2px; padding-left: 26px; }
+    .title-icon { font-size: 18px; line-height:1; }
+
+    /* Points tab */
+    .pts-tier { margin-bottom: 18px; }
+    .pts-tier-name {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 15px; font-weight: 700; color: var(--text);
+      margin-bottom: 8px;
+    }
+    .pts-tier-bar {
+      border-left: 3px solid var(--border2);
+      padding-left: 12px;
+      display: flex; gap: 8px; flex-wrap: wrap;
+    }
+    .pts-badge {
+      display: flex; align-items: center; gap: 5px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 999px;
+      padding: 5px 13px;
+      font-size: 12px; font-weight: 600; color: var(--text);
+    }
+    .pts-badge.ht { background: rgba(240,168,0,0.15); color: #f0c040; }
+    .pts-badge.lt { background: rgba(255,255,255,0.06); color: var(--muted); }
+    .pts-t1 .pts-tier-name { color: #f0c040; }
+    .pts-t1 .pts-tier-bar { border-color: #f0c040; }
+    .pts-t2 .pts-tier-name { color: #b0b8c8; }
+    .pts-t2 .pts-tier-bar { border-color: #b0b8c8; }
+    .pts-t3 .pts-tier-name { color: #c87840; }
+    .pts-t3 .pts-tier-bar { border-color: #c87840; }
+    .server-ip-wrap { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+    .pvp-badge {
+      height: 72px;
+      width: auto;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+    .server-ip-label { font-size: 10px; font-weight: 700; color: var(--violet-lt); letter-spacing: 0.1em; text-transform: uppercase; }
+    .server-ip-val {
+      font-family: var(--mono);
+      font-size: 12px; font-weight: 700; color: var(--text);
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      border-radius: 8px;
+      padding: 4px 10px;
+      display: flex; align-items: center; gap: 6px;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .server-ip-val:hover { border-color: var(--violet-lt); }
+    .discord-btn {
+      background: #5865F2; border-radius: 8px;
+      width: 28px; height: 28px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .discord-btn:hover { opacity: 0.85; }
+    .discord-btn svg { width: 16px; height: 16px; fill: #fff; }
+
+    /* ── TABLE HEADER ── */
+    .table-header {
+      max-width: 920px; margin: 0 auto;
+      padding: 4px 1rem 6px;
+      display: grid;
+      grid-template-columns: 140px 1fr 80px;
+      font-size: 10px; font-weight: 700; color: var(--muted);
+      letter-spacing: 0.12em; text-transform: uppercase;
+    }
+    .table-header-gm {
+      max-width: 920px; margin: 0 auto;
+      padding: 4px 1rem 6px;
+      display: grid;
+      grid-template-columns: 60px 1fr 100px 100px;
+      font-size: 10px; font-weight: 700; color: var(--muted);
+      letter-spacing: 0.12em; text-transform: uppercase;
+    }
+
+    /* ── BOARD ── */
+    .cards-wrap {
+      max-width: 460px; margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+
+    /* ── DESKTOP TABLE HEADER ── */
+    .desktop-table-header {
+      display: none;
+    }
+
+    /* ── OVERALL PLAYER CARD ── */
+    @keyframes gold-anim {
+      0%   { border-color: #b8860b; box-shadow: 0 0 14px rgba(200,150,10,0.55), 0 0 36px rgba(200,150,10,0.22); }
+      50%  { border-color: #f5c842; box-shadow: 0 0 24px rgba(245,200,66,0.75), 0 0 54px rgba(245,200,66,0.28); }
+      100% { border-color: #b8860b; box-shadow: 0 0 14px rgba(200,150,10,0.55), 0 0 36px rgba(200,150,10,0.22); }
+    }
+    @keyframes silver-anim {
+      0%   { border-color: #7a8fa0; box-shadow: 0 0 14px rgba(122,143,160,0.55); }
+      50%  { border-color: #c0cedd; box-shadow: 0 0 24px rgba(192,206,221,0.75); }
+      100% { border-color: #7a8fa0; box-shadow: 0 0 14px rgba(122,143,160,0.55); }
+    }
+    @keyframes bronze-anim {
+      0%   { border-color: #7a4818; box-shadow: 0 0 14px rgba(140,90,40,0.55); }
+      50%  { border-color: #c87840; box-shadow: 0 0 24px rgba(200,120,64,0.75); }
+      100% { border-color: #7a4818; box-shadow: 0 0 14px rgba(140,90,40,0.55); }
+    }
+    .player-card {
+      background: rgba(17,17,24,0.8);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .player-card:hover { border-color: var(--border2); box-shadow: 0 4px 20px rgba(109,40,217,0.08); }
+    .player-card.rank-1 { border-width: 2px; background: linear-gradient(160deg, #7a5200 0%, #c8940a 28%, #e8c040 50%, #c09018 72%, #7a5800 100%) !important; animation: gold-anim 2.4s ease-in-out infinite; }
+    .player-card.rank-2 { border-width: 2px; background: linear-gradient(160deg, #4a5560 0%, #8a9aaa 28%, #c0ccd8 50%, #8898a8 72%, #505e6a 100%) !important; animation: silver-anim 2.4s ease-in-out infinite; }
+    .player-card.rank-3 { border-width: 2px; background: linear-gradient(160deg, #5a3018 0%, #a06030 28%, #c88448 50%, #9a5c28 72%, #5a3010 100%) !important; animation: bronze-anim 2.4s ease-in-out infinite; }
+    .player-card.rank-1:hover, .player-card.rank-2:hover, .player-card.rank-3:hover { border-color: inherit; box-shadow: none; }
+
+    .card-top {
+      display: grid;
+      grid-template-columns: 40px 80px 1fr 60px;
+      align-items: stretch;
+      min-height: 68px;
+    }
+    .card-rank {
+      display: flex; align-items: center; justify-content: center;
+      font-size: 23px; font-weight: 900; font-style: italic;
+      color: #ffffff; line-height: 1;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.7), 0 0px 2px rgba(0,0,0,0.9);
+    }
+    .card-rank.rank-1 { color: #ffffff; }
+    .card-rank.rank-2 { color: #ffffff; }
+    .card-rank.rank-3 { color: #ffffff; }
+    .card-skin {
+      position: relative; width: 80px; height: 68px;
+      overflow: hidden; flex-shrink: 0; margin-left: 4px;
+      background: transparent;
+      border-radius: 8px;
+    }
+    .skin-img {
+      position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+      height: 115%; width: auto; max-width: 78px;
+      object-fit: contain; object-position: bottom center;
+      filter: drop-shadow(0 3px 10px rgba(0,0,0,0.8));
+    }
+    .skin-img.skin-uploaded {
+      position: absolute; top: 0; left: 0; bottom: auto; transform: none;
+      width: 100%; max-width: 100%; height: 200%;
+      object-fit: cover; object-position: top center; filter: none;
+    }
+    .skin-placeholder {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; font-weight: 900; color: rgba(255,255,255,0.2);
+      font-family: var(--mono);
+    }
+    .card-info { padding: 8px 10px; display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+    .card-name { font-size: 18px; font-weight: 800; color: #fff; letter-spacing: -0.02em; line-height: 1.1; word-break: break-word; }
+    .card-subtitle { display: flex; align-items: center; gap: 4px; margin-top: 3px; }
+    .card-subtitle-icon { width: 12px; height: 12px; flex-shrink: 0; }
+    .card-subtitle-text { font-size: 11px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .rank-pill {
+      display: inline-flex; align-items: center; gap: 5px;
+      align-self: flex-start; width: fit-content; margin-top: 4px;
+      padding: 2px 8px 2px 7px; border-radius: 999px;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+      font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; white-space: nowrap;
+    }
+    .card-region { display: flex; align-items: center; justify-content: center; padding: 8px 6px; }
+    .region-badge {
+      font-size: 13px; font-weight: 900; padding: 8px 13px;
+      border-radius: 8px; letter-spacing: 0.08em;
+      background: #3a3a50; color: #fff; border: none;
+      min-width: 44px; text-align: center;
+    }
+    .region-badge.NA   { background: #a83232; color: #fff; }
+    .region-badge.EU   { background: #27824a; color: #fff; }
+    .region-badge.AS,
+    .region-badge.ASIA { background: #5a3580; color: #fff; }
+    .region-badge.OCE  { background: #2a5fa8; color: #fff; }
+    .region-badge.SA   { background: #a86020; color: #fff; }
+    .player-card { display: flex; flex-direction: column; }
+    .card-top { flex-shrink: 0; }
+    .card-tiers { padding: 6px 10px 8px; margin-top: -1px; }
+    .tiers-label {
+      font-size: 10px; font-weight: 900; color: var(--violet-lt);
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px; opacity: 0.7;
+    }
+    .tiers-row { display: flex; gap: 5px; flex-wrap: wrap; }
+    .tier-badge { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+    .tier-badge-icon {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: rgba(0,0,0,0.4); border: 2px solid rgba(99,59,196,0.25);
+      display: flex; align-items: center; justify-content: center; font-size: 13px;
+    }
+    .tier-badge-label {
+      font-family: 'Space Mono', monospace; font-size: 9px; font-weight: 700;
+      border-radius: 4px; padding: 2px 5px; letter-spacing: 0.02em; line-height: 1.3;
+      background: transparent; color: #50566e; border: 1.5px solid #2a2e42;
+    }
+    .tier-badge-label.ht1 { background: #c8960a; color: #fff8e0; border: none; }
+    .tier-badge-label.ht2 { background: #b07c08; color: #fff3d0; border: none; }
+    .tier-badge-label.ht3 { background: #986206; color: #ffecb8; border: none; }
+    .tier-badge-label.ht4 { background: #7e4e05; color: #ffe090; border: none; }
+    .tier-badge-label.ht5 { background: #663c04; color: #ffd468; border: none; }
+    .tier-badge-label.lt1 { background: #7a3015; color: #ffd4b0; border: none; }
+    .tier-badge-label.lt2 { background: #622510; color: #ffc49a; border: none; }
+    .tier-badge-label.lt3 { background: #4e1c0c; color: #ffb082; border: none; }
+    .tier-badge-label.lt4 { background: #3c1408; color: #ffa068; border: none; }
+    .tier-badge-label.lt5 { background: #2c0e04; color: #ff9050; border: none; }
+    .tier-badge-label.ur  { background: transparent; color: #50566e; border: 1.5px solid #2a2e42; }
+
+    /* ── GAMEMODE LEADERBOARD ROW ── */
+    .gm-card {
+      background: rgba(17,17,24,0.8);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      display: grid;
+      grid-template-columns: 60px 1fr 100px 100px;
+      align-items: center;
+      min-height: 72px;
+      cursor: default;
+    }
+    .gm-card:hover { border-color: var(--border2); box-shadow: 0 4px 20px rgba(109,40,217,0.08); }
+    .gm-card.rank-1 { animation: gold-anim 2.4s ease-in-out infinite; }
+    .gm-card.rank-2 { animation: silver-anim 2.4s ease-in-out infinite; }
+    .gm-card.rank-3 { animation: bronze-anim 2.4s ease-in-out infinite; }
+    .gm-rank {
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 900; font-style: italic;
+      color: rgba(255,255,255,0.18); line-height: 1; padding: 0 8px;
+    }
+    .gm-rank.rank-1 { color: #c8960a; }
+    .gm-rank.rank-2 { color: #7a8fa0; }
+    .gm-rank.rank-3 { color: #8c6040; }
+    .gm-player { padding: 12px; display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .gm-skin {
+      width: 44px; height: 44px; border-radius: 8px;
+      overflow: hidden; flex-shrink: 0; position: relative;
+      background: rgba(0,0,0,0.3); border: 1px solid var(--border);
+    }
+    .gm-skin img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    .gm-skin img.gm-skin-local { width: 200%; height: 200%; margin-left: -50%; object-fit: cover; object-position: top center; }
+    .gm-name { font-size: 16px; font-weight: 800; color: #fff; letter-spacing: -0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .gm-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .gm-region-cell { display: flex; justify-content: center; padding: 8px; }
+    .gm-tier-cell { display: flex; justify-content: center; padding: 8px; }
+    .gm-tier-pill {
+      font-family: var(--mono); font-size: 13px; font-weight: 700;
+      border-radius: 8px; padding: 6px 14px; letter-spacing: 0.04em;
+      background: transparent; color: #50566e; border: 1.5px solid #2a2e42;
+    }
+    .gm-tier-pill.ht1 { background: rgba(200,150,10,0.2); color: #f5c842; border-color: rgba(200,150,10,0.4); }
+    .gm-tier-pill.ht2 { background: rgba(176,124,8,0.18); color: #e5b030; border-color: rgba(176,124,8,0.35); }
+    .gm-tier-pill.ht3 { background: rgba(152,98,6,0.16); color: #d0a020; border-color: rgba(152,98,6,0.32); }
+    .gm-tier-pill.ht4 { background: rgba(126,78,5,0.14); color: #c09010; border-color: rgba(126,78,5,0.28); }
+    .gm-tier-pill.ht5 { background: rgba(102,60,4,0.14); color: #b08010; border-color: rgba(102,60,4,0.28); }
+    .gm-tier-pill.lt1 { background: rgba(122,48,21,0.16); color: #e07040; border-color: rgba(122,48,21,0.3); }
+    .gm-tier-pill.lt2 { background: rgba(98,37,16,0.14); color: #d06030; border-color: rgba(98,37,16,0.28); }
+    .gm-tier-pill.lt3 { background: rgba(78,28,12,0.14); color: #c05020; border-color: rgba(78,28,12,0.28); }
+    .gm-tier-pill.lt4 { background: rgba(60,20,8,0.12); color: #b04010; border-color: rgba(60,20,8,0.24); }
+    .gm-tier-pill.lt5 { background: rgba(44,14,4,0.12); color: #a03008; border-color: rgba(44,14,4,0.24); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 2rem;
+    }
+    footer span { color: var(--violet-lt); }
+
+    /* ── UTILS ── */
+    .player-count {
+      max-width: 920px; margin: 0 auto;
+      padding: 0 1rem 8px;
+      font-size: 11px; font-weight: 600; color: var(--muted);
+      letter-spacing: 0.06em; text-transform: uppercase;
+    }
+
+    @media (min-width: 769px) {
+      .cards-wrap {
+        max-width: 1160px;
+        padding: 0 2rem 5rem;
+        gap: 14px;
+      }
+      .player-count {
+        max-width: 1160px;
+        padding: 0 2rem 8px;
+      }
+
+      /* ── Table column header ── */
+      .desktop-table-header {
+        display: grid;
+        grid-template-columns: 52px 58px 220px 84px 1fr;
+        align-items: center;
+        padding: 4px 0 8px 0;
+        font-size: 10px; font-weight: 800; letter-spacing: 0.12em;
+        text-transform: uppercase; color: var(--muted);
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 4px;
+      }
+      .desktop-table-header .dth-rank   { text-align: center; }
+      .desktop-table-header .dth-player { padding-left: 10px; }
+      .desktop-table-header .dth-region { text-align: center; }
+      .desktop-table-header .dth-tiers  { padding-left: 18px; }
+
+      /* ── Flatten card into a true single grid row ── */
+      .player-card {
+        display: grid !important;
+        grid-template-columns: 52px 58px 220px 84px 1fr;
+        align-items: center;
+        min-height: 58px;
+        border-radius: 8px;
+        flex-direction: unset;
+      }
+
+      /* card-top becomes invisible — its children join the parent grid */
+      .card-top {
+        display: contents !important;
+      }
+
+      /* ── Grid cell overrides ── */
+      .card-rank {
+        font-size: 20px;
+        padding: 0;
+        height: 100%;
+        display: flex; align-items: center; justify-content: center;
+      }
+
+      .card-skin {
+        width: 58px; height: 58px;
+        border-radius: 0; margin-left: 0;
+        overflow: hidden;
+      }
+      .skin-img {
+        height: 140%; max-width: 56px;
+      }
+      .skin-img.skin-uploaded {
+        height: 200%; width: 100%; max-width: 100%;
+      }
+
+      .card-info {
+        padding: 8px 14px;
+        display: flex; flex-direction: column; justify-content: center;
+        height: 100%;
+      }
+      .card-name { font-size: 14px; }
+      .card-subtitle { margin-top: 2px; }
+      .card-subtitle-text { font-size: 10px; }
+      .rank-pill { font-size: 10px; padding: 1px 6px; }
+
+      .card-region {
+        display: flex; align-items: center; justify-content: center;
+        height: 100%; padding: 0;
+      }
+      .region-badge { font-size: 11px; padding: 5px 9px; min-width: 38px; }
+
+      /* ── Tiers: 5th grid column ── */
+      .card-tiers {
+        display: flex !important;
+        align-items: center;
+        padding: 0 18px;
+        margin-top: 0;
+        height: 100%;
+        border-left: 1px solid rgba(99,59,196,0.15);
+      }
+      .tiers-label { display: none; }
+      .tiers-row   { flex-wrap: nowrap; gap: 7px; align-items: flex-start; padding-top: 6px; }
+      .tier-badge  { align-items: center; gap: 3px; }
+      .tier-badge-icon  { width: 28px; height: 28px; font-size: 12px; border-width: 1.5px; }
+      .tier-badge-label { font-size: 8px; padding: 1px 4px; }
+
+      /* ── Gamemode rows (already single-row, just widen) ── */
+      .gm-card {
+        grid-template-columns: 52px 1fr 100px 120px;
+        min-height: 56px; border-radius: 8px;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .card-top { grid-template-columns: 36px 80px 1fr 54px; min-height: 74px; }
+      .table-header { grid-template-columns: 100px 1fr 54px; }
+      .card-rank { font-size: 23px; }
+      .card-skin { width: 80px; height: 74px; }
+      .skin-img { max-width: 60px; }
+      .card-name { font-size: 17px; }
+      .card-subtitle-text { font-size: 11px; }
+      .region-badge { font-size: 12px; padding: 7px 10px; }
+      .tier-badge-icon { width: 32px; height: 32px; font-size: 14px; }
+      .gm-card { grid-template-columns: 44px 1fr 60px 80px; }
+      .gm-name { font-size: 14px; }
+      .table-header-gm { grid-template-columns: 44px 1fr 60px 80px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <img class="logo" src="/static/aftershock-logo-cropped.png" alt="Aftershock Tiers">
+    <nav class="nav-links">
+      <span class="nav-link active">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Home
+      </span>
+      <span class="nav-link active">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        Rankings
+      </span>
+    </nav>
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input class="search-input" type="text" placeholder="Search player..." id="searchInput" oninput="handleSearch()">
+      <span class="search-kbd">/</span>
+    </div>
+  </div>
+</header>
+
+<div class="tabs-wrap">
+  <div class="tabs-inner" id="tabsInner">
+    <div class="tab active" data-tab="overall" onclick="switchTab('overall', this)">
+      <span class="tab-icon" style="font-size:22px;display:flex;align-items:center;justify-content:center;"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3c6.png" width="26" height="26" style="vertical-align:middle;image-rendering:crisp-edges;" alt="🏆"></span>
+      Overall
+    </div>
+    <div class="tab" data-tab="sword" onclick="switchTab('sword', this)">
+      <img class="tab-icon" src="https://cdn.discordapp.com/emojis/1512168702362255380.png" alt="Sword">
+      Sword
+    </div>
+    <div class="tab" data-tab="axe" onclick="switchTab('axe', this)">
+      <img class="tab-icon" src="https://cdn.discordapp.com/emojis/1500454383681273986.png" alt="Axe">
+      Axe
+    </div>
+    <div class="tab" data-tab="nethop" onclick="switchTab('nethop', this)">
+      <img class="tab-icon" src="https://cdn.discordapp.com/emojis/1466808945522770132.png" alt="NethOP">
+      NethOP
+    </div>
+    <div class="tab" data-tab="uhc" onclick="switchTab('uhc', this)">
+      <img class="tab-icon" src="https://cdn.discordapp.com/emojis/1512169002082762912.png" alt="UHC">
+      UHC
+    </div>
+    <div class="tab" data-tab="smp" onclick="switchTab('smp', this)">
+      <img class="tab-icon" src="https://cdn.discordapp.com/emojis/1512168820830109858.png" alt="SMP">
+      SMP
+    </div>
+    <div class="tab" data-tab="pot" onclick="switchTab('pot', this)">
+      <img class="tab-icon" src="https://cdn.discordapp.com/emojis/1512168870922948848.png" alt="Pot">
+      Pot
+    </div>
+    <div class="tab" data-tab="mace" onclick="switchTab('mace', this)">
+      <img class="tab-icon" src="https://cdn.discordapp.com/emojis/1466809319810142260.png" alt="Mace">
+      Mace
+    </div>
+    <div class="tab" data-tab="crystal" onclick="switchTab('crystal', this)">
+      <img class="tab-icon" src="https://cdn.discordapp.com/emojis/1512168746918084679.png" alt="Crystal">
+      Crystal
+    </div>
+    <div class="season-badge">&#x1F451; SEASON 1</div>
+  </div>
+</div>
+
+<div class="server-banner">
+  <div class="info-panel-wrap">
+    <button class="info-btn" id="infoPanelBtn" onclick="toggleInfoPanel(event)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      Information
+    </button>
+    <div class="info-panel" id="infoPanel">
+      <div class="info-tabs">
+        <button class="info-tab active" id="tabTitles" onclick="switchInfoTab('titles')">Titles</button>
+        <button class="info-tab" id="tabPoints" onclick="switchInfoTab('points')">Points</button>
+      </div>
+      <div class="info-body">
+        <!-- Titles tab -->
+        <div class="info-tab-content active" id="infoTitles">
+          <h3>How to obtain <u>Achievement Titles</u></h3>
+          <div class="title-item">
+            <div class="title-item-name"><span class="title-icon"><img src="https://cdn.discordapp.com/emojis/1521028405238304872.png" width="23" height="23" style="vertical-align:middle;"></span><span style="color:#f0c040">Conquered</span></div>
+            <div class="title-item-desc">Obtained 700+ total points.</div>
+          </div>
+          <div class="title-item">
+            <div class="title-item-name"><span class="title-icon"><img src="https://cdn.discordapp.com/emojis/1521028367812530317.png" width="23" height="23" style="vertical-align:middle;"></span><span style="color:#c8960a">Combat Master</span></div>
+            <div class="title-item-desc">Obtained 500+ total points.</div>
+          </div>
+          <div class="title-item">
+            <div class="title-item-name"><span class="title-icon"><img src="https://cdn.discordapp.com/emojis/1521028320446251120.png" width="23" height="23" style="vertical-align:middle;"></span><span style="color:#5b8dee">Combat Ace</span></div>
+            <div class="title-item-desc">Obtained 300+ total points.</div>
+          </div>
+          <div class="title-item">
+            <div class="title-item-name"><span class="title-icon"><img src="https://cdn.discordapp.com/emojis/1521028343305076786.png" width="23" height="23" style="vertical-align:middle;"></span><span style="color:#3cde7e">Combat Specialist</span></div>
+            <div class="title-item-desc">Obtained 175+ total points.</div>
+          </div>
+          <div class="title-item">
+            <div class="title-item-name"><span class="title-icon"><img src="https://cdn.discordapp.com/emojis/1521028241488609371.png" width="23" height="23" style="vertical-align:middle;"></span><span style="color:#a060ff">Combat Cadet</span></div>
+            <div class="title-item-desc">Obtained 75+ total points.</div>
+          </div>
+          <div class="title-item">
+            <div class="title-item-name"><span class="title-icon"><img src="https://cdn.discordapp.com/emojis/1521028195514716230.png" width="23" height="23" style="vertical-align:middle;"></span><span style="color:#c8cce0">Rookie</span></div>
+            <div class="title-item-desc">Starting rank for players with less than 75 points.</div>
+          </div>
+        </div>
+        <!-- Points tab -->
+        <div class="info-tab-content" id="infoPoints">
+          <h3>How <u>ranking points</u> are calculated</h3>
+          <div class="pts-tier pts-t1">
+            <div class="pts-tier-name"><img src="https://cdn.discordapp.com/emojis/1511391682451472504.png" width="20" height="20" style="vertical-align:middle;margin-right:4px;"> Tier 1</div>
+            <div class="pts-tier-bar">
+              <span class="pts-badge ht">⬆⬆ 100 Points</span>
+              <span class="pts-badge lt">⬆ 90 Points</span>
+            </div>
+          </div>
+          <div class="pts-tier pts-t2">
+            <div class="pts-tier-name"><img src="https://cdn.discordapp.com/emojis/1511391377236164678.png" width="20" height="20" style="vertical-align:middle;margin-right:4px;"> Tier 2</div>
+            <div class="pts-tier-bar">
+              <span class="pts-badge ht">⬆⬆ 80 Points</span>
+              <span class="pts-badge lt">⬆ 70 Points</span>
+            </div>
+          </div>
+          <div class="pts-tier pts-t3">
+            <div class="pts-tier-name"><img src="https://cdn.discordapp.com/emojis/1511391138282606712.png" width="20" height="20" style="vertical-align:middle;margin-right:4px;"> Tier 3</div>
+            <div class="pts-tier-bar">
+              <span class="pts-badge ht">⬆⬆ 60 Points</span>
+              <span class="pts-badge lt">⬆ 50 Points</span>
+            </div>
+          </div>
+          <div class="pts-tier">
+            <div class="pts-tier-name">Tier 4</div>
+            <div class="pts-tier-bar">
+              <span class="pts-badge ht">⬆⬆ 40 Points</span>
+              <span class="pts-badge lt">⬆ 30 Points</span>
+            </div>
+          </div>
+          <div class="pts-tier">
+            <div class="pts-tier-name">Tier 5</div>
+            <div class="pts-tier-bar">
+              <span class="pts-badge ht">⬆⬆ 20 Points</span>
+              <span class="pts-badge lt">⬆ 10 Points</span>
+            </div>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin-top:10px">⬆⬆ = High Tier (HT) &nbsp;·&nbsp; ⬆ = Low Tier (LT)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="server-ip-wrap">
+    <img class="pvp-badge" src="/static/shockhub.png" alt="Shock Hub">
+    <div>
+      <div class="server-ip-label">Discord</div>
+      <div class="server-ip-val" onclick="navigator.clipboard&&navigator.clipboard.writeText('discord.gg/4KdjtN6eE').then(()=>{this.style.borderColor='var(--green)';setTimeout(()=>this.style.borderColor='',1500)})">
+        discord.gg/4KdjtN6eE
+        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      </div>
+    </div>
+    <a class="discord-btn" href="https://discord.gg/4KdjtN6eE" target="_blank" rel="noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+    </a>
+  </div>
+</div>
+
+<div id="player-count" class="player-count"></div>
+<div class="cards-wrap">
+  <div class="desktop-table-header" id="desktopTableHeader">
+    <div class="dth-rank">#</div>
+    <div></div>
+    <div class="dth-player">Player</div>
+    <div class="dth-region">Region</div>
+    <div class="dth-tiers">Tiers</div>
+  </div>
+  <div id="board"></div>
+</div>
+
+<footer>
+  <span id="ts"></span> &nbsp;&middot;&nbsp; Points determine rank &nbsp;&middot;&nbsp; discord.gg/4KdjtN6eE &nbsp;&middot;&nbsp; <span>Aftershock Tiers &copy; 2026</span>
+</footer>
+
+<script>
+  const REFRESH_INTERVAL = 30000;
+
+  const emojiMap = {
+    MACE:    "https://cdn.discordapp.com/emojis/1466809319810142260.png",
+    POT:     "https://cdn.discordapp.com/emojis/1512168870922948848.png",
+    SMP:     "https://cdn.discordapp.com/emojis/1512168820830109858.png",
+    SWORD:   "https://cdn.discordapp.com/emojis/1512168702362255380.png",
+    UHC:     "https://cdn.discordapp.com/emojis/1512169002082762912.png",
+    AXE:     "https://cdn.discordapp.com/emojis/1500454383681273986.png",
+    NETHOP:  "https://cdn.discordapp.com/emojis/1466808945522770132.png",
+    CRYSTAL: "https://cdn.discordapp.com/emojis/1512168746918084679.png",
+    VANILLA: "https://cdn.discordapp.com/emojis/1512168746918084679.png",
+  };
+
+  let allPlayers = [];
+  let gmData = {};
+  let currentTab = 'overall';
+  let searchQuery = '';
+
+  /* ── Keyboard shortcut: / focuses search ── */
+  document.addEventListener('keydown', e => {
+    if (e.key === '/' && document.activeElement !== document.getElementById('searchInput')) {
+      e.preventDefault();
+      document.getElementById('searchInput').focus();
+    }
+    if (e.key === 'Escape') document.getElementById('searchInput').blur();
+  });
+
+  function handleSearch() {
+    searchQuery = document.getElementById('searchInput').value.toLowerCase().trim();
+    renderCurrentView();
+  }
+
+  /* ── Info Panel ── */
+  function toggleInfoPanel(e) {
+    e.stopPropagation();
+    document.getElementById('infoPanel').classList.toggle('open');
+  }
+  function switchInfoTab(tab) {
+    document.getElementById('infoTitles').classList.toggle('active', tab === 'titles');
+    document.getElementById('infoPoints').classList.toggle('active', tab === 'points');
+    document.getElementById('tabTitles').classList.toggle('active', tab === 'titles');
+    document.getElementById('tabPoints').classList.toggle('active', tab === 'points');
+  }
+  document.addEventListener('click', function(e) {
+    const panel = document.getElementById('infoPanel');
+    const btn   = document.getElementById('infoPanelBtn');
+    if (panel && btn && !panel.contains(e.target) && !btn.contains(e.target)) {
+      panel.classList.remove('open');
+    }
+  });
+
+  function rankClass(rank) {
+    if (rank === 1) return 'rank-1';
+    if (rank === 2) return 'rank-2';
+    if (rank === 3) return 'rank-3';
+    return '';
+  }
+
+  function tierCls(label) {
+    return (label || '').toLowerCase().replace('-', '');
+  }
+
+  function isValidPlayer(p) {
+    return p && typeof p.rank === 'number' && typeof p.name === 'string'
+      && p.name.trim() !== '' && typeof p.points === 'number' && Array.isArray(p.tiers);
+  }
+
+  /* ── Overall card ── */
+  function renderCard(p) {
+    const tiersHTML = (p.tiers || []).map(t => {
+      const imgSrc = emojiMap[t.icon] || '';
+      return `<div class="tier-badge">
+        <div class="tier-badge-icon"><img src="${imgSrc}" alt="${t.icon || ''}" width="26" height="26" style="image-rendering:auto;object-fit:contain;" onerror="this.style.display='none'"></div>
+        <div class="tier-badge-label ${tierCls(t.label)}">${t.label || ''}</div>
+      </div>`;
+    }).join('');
+
+    const subtitleColor = (p.tier || '').startsWith('HT') ? '#f5c842' : '#8b9bbf';
+    const subtitleFg = (p.overall_rank && p.overall_rank.fg) || subtitleColor;
+    const ptsText = p.points > 0 ? `${p.points} pts` : '';
+    const rankEmoji = {'Conquered':'1521028405238304872','Combat Master':'1521028367812530317','Combat Ace':'1521028320446251120','Combat Specialist':'1521028343305076786','Combat Cadet':'1521028241488609371','Rookie':'1521028195514716230'};
+    const hasRank = p.overall_rank && p.overall_rank.label && p.overall_rank.label !== 'Unranked';
+    const rankEmojiId = rankEmoji[p.overall_rank && p.overall_rank.label];
+    const rankEmojiHTML = rankEmojiId ? `<img src="https://cdn.discordapp.com/emojis/${rankEmojiId}.png" width="16" height="16" style="vertical-align:middle;margin-right:3px;">` : '';
+    const rankPillHTML = hasRank
+      ? `<div class="rank-pill" style="color:${p.overall_rank.fg};border-color:${p.overall_rank.bg}60;">${rankEmojiHTML}${p.overall_rank.label}</div>`
+      : '';
+
+    const regionClass = (p.region || '').toUpperCase().replace(/\\s+/g,'').substring(0,4);
+    const customSkin  = p.skin_url || '';
+    const isLocalSkin = customSkin.startsWith('/skins/');
+    const visageUrl   = 'https://visage.surgeplay.com/full/256/' + encodeURIComponent(p.name) + '.png';
+    const crafatarUrl = 'https://crafatar.com/renders/body/' + encodeURIComponent(p.name) + '?overlay&scale=4';
+    const mcheadsUrl  = 'https://mc-heads.co/player/' + encodeURIComponent(p.name) + '/left';
+    const primaryUrl  = isLocalSkin ? customSkin : (customSkin || visageUrl);
+    const fb1 = isLocalSkin ? '' : (customSkin ? visageUrl : crafatarUrl);
+    const fb2 = isLocalSkin ? '' : (customSkin ? crafatarUrl : mcheadsUrl);
+    const rc = rankClass(p.rank);
+
+    return `<div class="player-card ${rc}" data-name="${p.name.toLowerCase()}">
+      <div class="card-top">
+        <div class="card-rank ${rc}">${p.rank}.</div>
+        <div class="card-skin ${rc}">
+          <img class="${isLocalSkin ? 'skin-img skin-uploaded' : 'skin-img'}"
+            src="${primaryUrl}" data-fb1="${fb1}" data-fb2="${fb2}"
+            onerror="const f1=this.dataset.fb1,f2=this.dataset.fb2;if(!this.dataset.try&&f1){this.dataset.try='1';this.src=f1;}else if(this.dataset.try==='1'&&f2){this.dataset.try='2';this.src=f2;}else{this.dataset.try='done';this.style.display='none';this.nextElementSibling.style.display='flex';}"
+            alt="${p.name} skin">
+          <div class="skin-placeholder" style="display:none">${p.name.slice(0,2).toUpperCase()}</div>
+        </div>
+        <div class="card-info">
+          <div class="card-name">${p.name}</div>
+          <div class="card-subtitle">
+            ${rankPillHTML}
+            <span class="card-subtitle-text" style="color:${subtitleFg}">${ptsText}</span>
+          </div>
+        </div>
+        <div class="card-region">
+          <div class="region-badge ${regionClass}">${p.region || '?'}</div>
+        </div>
+      </div>
+      ${tiersHTML ? `<div class="card-tiers"><div class="tiers-label">Tiers</div><div class="tiers-row">${tiersHTML}</div></div>` : ''}
+    </div>`;
+  }
+
+  /* ── Gamemode row ── */
+  function renderGmRow(entry, rank) {
+    const rc = rankClass(rank);
+    const localSkin   = entry.skin_url || '';
+    const isLocal     = localSkin.startsWith('/skins/');
+    const visageUrl   = 'https://visage.surgeplay.com/bust/64/' + encodeURIComponent(entry.username) + '.png';
+    const crafatarUrl = 'https://crafatar.com/avatars/' + encodeURIComponent(entry.username) + '?overlay&size=64';
+    const primaryUrl  = isLocal ? localSkin : visageUrl;
+    const fb1         = isLocal ? visageUrl : crafatarUrl;
+    const fb2         = isLocal ? crafatarUrl : '';
+    const imgCls      = isLocal ? 'gm-skin-local' : '';
+    const tcls = tierCls(entry.tier);
+    const regionClass = (entry.region || '').toUpperCase().replace(/\\s+/g,'').substring(0,4);
+    return `<div class="gm-card ${rc}" data-name="${entry.username.toLowerCase()}">
+      <div class="gm-rank ${rc}">${rank}.</div>
+      <div class="gm-player">
+        <div class="gm-skin">
+          <img class="${imgCls}" src="${primaryUrl}" data-fb1="${fb1}" data-fb2="${fb2}"
+            onerror="const f1=this.dataset.fb1,f2=this.dataset.fb2;if(!this.dataset.t&&f1){this.dataset.t='1';this.src=f1;this.className='';}else if(this.dataset.t==='1'&&f2){this.dataset.t='2';this.src=f2;}else{this.style.display='none';}"
+            alt="${entry.username}">
+        </div>
+        <div>
+          <div class="gm-name">${entry.username}</div>
+          ${entry.region ? `<div class="gm-sub">${entry.region}</div>` : ''}
+        </div>
+      </div>
+      <div class="gm-region-cell">
+        <div class="region-badge ${regionClass}">${entry.region || '?'}</div>
+      </div>
+      <div class="gm-tier-cell">
+        <div class="gm-tier-pill ${tcls}">${entry.tier}</div>
+      </div>
+    </div>`;
+  }
+
+  /* ── Render ── */
+  const PAGE_SIZE = 50;
+  let currentList = [];
+  let visibleCount = 0;
+
+  function renderCurrentView() {
+    if (currentTab === 'overall') {
+      const filtered = allPlayers.filter(p => !searchQuery || p.name.toLowerCase().includes(searchQuery));
+      renderOverall(filtered);
+    } else {
+      const list = (gmData[currentTab] || []).filter(e => !searchQuery || e.username.toLowerCase().includes(searchQuery));
+      renderGm(list);
+    }
+  }
+
+  function renderOverall(list) {
+    currentList = list; visibleCount = 0;
+    const board = document.getElementById('board');
+    if (!list || list.length === 0) {
+      board.innerHTML = '<p style="text-align:center;color:var(--muted);padding:3rem 1rem;">No players found.</p>';
+      setCount(0, 0); return;
+    }
+    board.innerHTML = '';
+    appendOverallPage();
+  }
+
+  function appendOverallPage() {
+    const board = document.getElementById('board');
+    const oldBtn = document.getElementById('load-more-btn');
+    if (oldBtn) oldBtn.remove();
+    const slice = currentList.slice(visibleCount, visibleCount + PAGE_SIZE);
+    slice.forEach(p => board.insertAdjacentHTML('beforeend', renderCard(p)));
+    visibleCount += slice.length;
+    setCount(visibleCount, currentList.length);
+    if (visibleCount < currentList.length) {
+      const remaining = currentList.length - visibleCount;
+      const btn = document.createElement('div');
+      btn.id = 'load-more-btn';
+      btn.style.cssText = 'text-align:center;padding:1.5rem 1rem 2rem;';
+      btn.innerHTML = `<button onclick="appendOverallPage()" style="background:var(--surface2);border:1px solid var(--border2);border-radius:999px;color:var(--text);font-family:var(--sans);font-size:13px;font-weight:600;padding:10px 28px;cursor:pointer;transition:border-color 0.15s;" onmouseover="this.style.borderColor='var(--violet-lt)'" onmouseout="this.style.borderColor='var(--border2)'">Load more <span style="color:var(--muted)">(${remaining} remaining)</span></button>`;
+      board.parentElement.appendChild(btn);
+    }
+  }
+
+  function renderGm(list) {
+    const board = document.getElementById('board');
+    if (!list || list.length === 0) {
+      board.innerHTML = '<p style="text-align:center;color:var(--muted);padding:3rem 1rem;">No players found for this gamemode.</p>';
+      setCount(0, 0); return;
+    }
+    board.innerHTML = list.map((e, i) => renderGmRow(e, i + 1)).join('');
+    setCount(list.length, list.length);
+  }
+
+  function setCount(shown, total) {
+    const el = document.getElementById('player-count');
+    el.textContent = total > 0 ? `Showing ${shown} of ${total} players` : '';
+  }
+
+  function updateTimestamp(fromAPI) {
+    const el = document.getElementById('ts');
+    const now = new Date();
+    const source = fromAPI ? '🟢 Live' : '🟡 Cached';
+    el.innerHTML = source + ' · Updated ' + now.toLocaleTimeString('en-US', {hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  }
+
+  /* ── Tab switching ── */
+  function switchTab(tab, el) {
+    if (currentTab === tab) return;
+    currentTab = tab;
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    const dth = document.getElementById('desktopTableHeader');
+    if (dth) dth.style.display = tab === 'overall' ? '' : 'none';
+    renderCurrentView();
+  }
+
+  /* ── Static data processing (reads tiers_data.json — works even when bot is offline) ── */
+  const TIER_PTS = {"HT1":100,"LT1":90,"HT2":80,"LT2":70,"HT3":60,"LT3":50,"HT4":40,"LT4":30,"HT5":20,"LT5":10};
+  const RANK_TIERS = [[700,"Conquered","#ff6b35","#fff0e8"],[500,"Combat Master","#c8960a","#fff8e0"],[300,"Combat Ace","#5b8dee","#e8f0ff"],[175,"Combat Specialist","#3cde7e","#e0fff0"],[75,"Combat Cadet","#a060ff","#f0e8ff"],[1,"Rookie","#50566e","#c8cce0"]];
+  const GM_ICON_MAP = {"sword":"SWORD","axe":"AXE","crystal":"CRYSTAL","nethop":"NETHOP","uhc":"UHC","smp":"SMP","pot":"POT","mace":"MACE","vanilla":"VANILLA"};
+  const REGION_FLAGS = {"NA":"🇺🇸","EU":"🇪🇺","AS":"🇮🇳","SA":"🇧🇷","OCE":"🇦🇺"};
+  const DEFAULT_GMS  = ["Sword","Axe","NethOP","UHC","SMP","Pot","Mace","Crystal"];
+
+  function overallRankFor(pts) {
+    for (const [min,label,bg,fg] of RANK_TIERS) if (pts >= min) return {label,bg,fg};
+    return {label:"Unranked",bg:"#21253a",fg:"#50566e"};
+  }
+
+  function processRawData(raw) {
+    const profiles  = raw.profiles  || {};
+    const players   = raw.players   || {};
+    const gamemodes = raw.gamemodes || DEFAULT_GMS;
+    const discNames = raw.discord_names || {};
+
+    // discord_id → { username, region, skin_url }
+    const idToProf = {};
+    for (const v of Object.values(profiles)) {
+      if (v.discord_id && v.minecraft_username)
+        idToProf[v.discord_id] = {username: v.minecraft_username, region: v.region||'', skin_url: v.skin_url||''};
+    }
+
+    function resolve(rawKey) {
+      const entry = players[rawKey] || {};
+      const dregion = typeof entry === 'object' ? (entry.region||'') : '';
+      if (rawKey.startsWith('<@') && rawKey.endsWith('>')) {
+        const uid = rawKey.slice(2,-1);
+        if (idToProf[uid]) { const p=idToProf[uid]; return {name:p.username, region:p.region||dregion, skin_url:p.skin_url}; }
+        if (discNames[uid]) return {name:discNames[uid], region:dregion, skin_url:''};
+        return null;
+      }
+      for (const v of Object.values(profiles))
+        if ((v.minecraft_username||'').toLowerCase()===rawKey.toLowerCase())
+          return {name:rawKey, region:v.region||dregion, skin_url:v.skin_url||''};
+      return {name:rawKey, region:dregion, skin_url:''};
+    }
+
+    const pmap = {};
+    for (const [rawKey, gmData2] of Object.entries(players)) {
+      if (typeof gmData2 !== 'object') continue;
+      const r = resolve(rawKey);
+      if (!r) continue;
+      const {name, region, skin_url} = r;
+      if (!pmap[name]) { const bonus=gmData2.bonus_points||0; pmap[name]={region,skin_url,tiers:{},points:bonus,bonus_points:bonus}; }
+      for (const gm of gamemodes) {
+        const gk = gm.toLowerCase();
+        if (gmData2[gk] && typeof gmData2[gk]==='object' && gmData2[gk].tier) {
+          pmap[name].tiers[gm] = gmData2[gk].tier;
+          pmap[name].points += (TIER_PTS[gmData2[gk].tier]||0);
+        }
+      }
+      if (region)   pmap[name].region   = region;
+      if (skin_url) pmap[name].skin_url = skin_url;
+    }
+
+    const sorted = Object.entries(pmap).sort((a,b)=>b[1].points-a[1].points);
+
+    const overallOut = sorted.map(([name,info],i) => {
+      const pts=info.points, region=info.region||'', flag=REGION_FLAGS[region]||'🌍';
+      let bestTier=null;
+      for (const gm of gamemodes) { const t=info.tiers[gm]; if(t&&(!bestTier||(TIER_PTS[t]||0)>(TIER_PTS[bestTier]||0))) bestTier=t; }
+      const tiersList = gamemodes.map(gm=>({icon:GM_ICON_MAP[gm.toLowerCase()]||gm.toUpperCase().slice(0,6),label:info.tiers[gm]||'UR'}))
+        .sort((a,b)=>(TIER_PTS[b.label]||0)-(TIER_PTS[a.label]||0));
+      return {rank:i+1,name,points:pts,bonus_points:info.bonus_points||0,tier:bestTier||'Unranked',overall_rank:overallRankFor(pts),region,flag,tiers:tiersList,skin_url:info.skin_url||''};
+    });
+
+    const gmOut = {};
+    for (const gm of gamemodes) {
+      const gk = gm.toLowerCase();
+      const list = [];
+      for (const [rawKey,gmData2] of Object.entries(players)) {
+        if (typeof gmData2!=='object') continue;
+        if (gmData2[gk]&&typeof gmData2[gk]==='object'&&gmData2[gk].tier) {
+          const r=resolve(rawKey); if(!r) continue;
+          list.push({username:r.name,tier:gmData2[gk].tier,region:r.region,skin_url:r.skin_url});
+        }
+      }
+      list.sort((a,b)=>(TIER_PTS[b.tier]||0)-(TIER_PTS[a.tier]||0));
+      gmOut[gk] = list;
+    }
+    return {overallOut, gmOut};
+  }
+
+  async function loadAllData(isRefresh) {
+    if (!isRefresh) document.getElementById('board').innerHTML = '<p style="text-align:center;color:var(--muted);padding:3rem 1rem;">Loading players...</p>';
+    try {
+      const res = await fetch('/tiers_data.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const raw = await res.json();
+      const {overallOut, gmOut} = processRawData(raw);
+      allPlayers = overallOut.filter(isValidPlayer);
+      gmData     = gmOut;
+      updateTimestamp(true);
+    } catch(err) {
+      console.error('Data fetch error:', err);
+      updateTimestamp(false);
+    }
+  }
+
+  async function init() {
+    await loadAllData(false);
+    renderCurrentView();
+    setInterval(async () => {
+      await loadAllData(true);
+      renderCurrentView();
+    }, REFRESH_INTERVAL);
+  }
+
+  init();
+</script>
+</body>
+</html>
