@@ -408,6 +408,11 @@
         "tier": "HT5",
         "updated_at": "2026-07-02T12:55:24.142602",
         "updated_by": "tosu_tofu"
+      },
+      "smp": {
+        "tier": "HT4",
+        "updated_at": "2026-07-02T17:33:46.278128",
+        "updated_by": "im_shaddy_777"
       }
     },
     "tousif666": {
@@ -2014,6 +2019,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-02T14:48:36.043771"
+    },
+    {
+      "id": 134,
+      "username": "<@999158007843782788>",
+      "tester_name": "CHAD",
+      "gamemode": "SMP",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-02T17:33:46.278128"
     }
   ],
   "profiles": {
