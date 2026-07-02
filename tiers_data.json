@@ -411,7 +411,7 @@
       },
       "smp": {
         "tier": "HT4",
-        "updated_at": "2026-07-02T17:33:46.278128",
+        "updated_at": "2026-07-02T18:15:14.065013",
         "updated_by": "im_shaddy_777"
       }
     },
@@ -2031,6 +2031,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-02T17:33:46.278128"
+    },
+    {
+      "id": 135,
+      "username": "<@999158007843782788>",
+      "tester_name": "CHAD",
+      "gamemode": "SMP",
+      "tested_tier": "HT4",
+      "rank_before": "HT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-02T18:15:14.065013"
     }
   ],
   "profiles": {
