@@ -72,6 +72,11 @@
         "tier": "HT4",
         "updated_at": "2026-06-16T07:45:12.759061",
         "updated_by": "chad__007"
+      },
+      "mace": {
+        "tier": "HT1",
+        "updated_at": "2026-07-02T14:48:36.043771",
+        "updated_by": "im_shaddy_777"
       }
     },
     "<@1384922268349763664>": {
@@ -2002,6 +2007,18 @@
       "notes": "",
       "judged_by": "tosu_tofu",
       "tested_at": "2026-07-02T12:55:24.142602"
+    },
+    {
+      "id": 133,
+      "username": "<@1494236355063054376>",
+      "tester_name": "shady",
+      "gamemode": "MACE",
+      "tested_tier": "HT1",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-02T14:48:36.043771"
     }
   ],
   "profiles": {
