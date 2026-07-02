@@ -1,0 +1,2404 @@
+{
+  "players": {
+    "<@1222973313651966075>": {
+      "username": "<@1222973313651966075>",
+      "tier": "HT5",
+      "updated_at": "2026-06-08T13:33:54.249976",
+      "updated_by": "im_shaddy_777",
+      "sword": {
+        "tier": "LT3",
+        "updated_at": "2026-06-26T15:34:50.975840",
+        "updated_by": "im_shaddy_777"
+      },
+      "crystal": {
+        "tier": "HT5",
+        "updated_at": "2026-06-13T04:33:48.838002",
+        "updated_by": "im_shaddy_777"
+      },
+      "axe": {
+        "tier": "LT4",
+        "updated_at": "2026-06-13T08:50:22.445433",
+        "updated_by": "chad__007"
+      },
+      "uhc": {
+        "tier": "HT4",
+        "updated_at": "2026-06-27T09:44:58.196565",
+        "updated_by": "chad__007"
+      },
+      "nethop": {
+        "tier": "HT4",
+        "updated_at": "2026-06-26T15:35:53.796626",
+        "updated_by": "im_shaddy_777"
+      },
+      "pot": {
+        "tier": "LT4",
+        "updated_at": "2026-06-26T19:02:31.629802",
+        "updated_by": "im_shaddy_777"
+      },
+      "mace": {
+        "tier": "HT5",
+        "updated_at": "2026-06-27T09:07:34.208804",
+        "updated_by": "chad__007"
+      },
+      "smp": {
+        "tier": "LT4",
+        "updated_at": "2026-06-27T09:15:01.216107",
+        "updated_by": "chad__007"
+      }
+    },
+    "<@1494236355063054376>": {
+      "sword": {
+        "tier": "LT3",
+        "updated_at": "2026-06-30T04:48:14.909050",
+        "updated_by": "im_shaddy_777"
+      },
+      "bonus_points": 20,
+      "crystal": {
+        "tier": "HT3",
+        "updated_at": "2026-06-13T04:46:09.403760",
+        "updated_by": "im_shaddy_777"
+      },
+      "axe": {
+        "tier": "LT4",
+        "updated_at": "2026-06-16T07:34:24.326303",
+        "updated_by": "chad__007"
+      },
+      "uhc": {
+        "tier": "HT4",
+        "updated_at": "2026-06-16T07:33:45.641495",
+        "updated_by": "chad__007"
+      },
+      "smp": {
+        "tier": "HT4",
+        "updated_at": "2026-06-16T07:45:12.759061",
+        "updated_by": "chad__007"
+      }
+    },
+    "<@1384922268349763664>": {
+      "axe": {
+        "tier": "HT4",
+        "updated_at": "2026-06-13T04:32:19.560450",
+        "updated_by": "im_shaddy_777"
+      }
+    },
+    "<@865454514277974017>": {
+      "sword": {
+        "tier": "LT4",
+        "updated_at": "2026-06-13T04:33:08.480451",
+        "updated_by": "im_shaddy_777"
+      },
+      "crystal": {
+        "tier": "HT5",
+        "updated_at": "2026-06-13T04:32:48.235222",
+        "updated_by": "im_shaddy_777"
+      },
+      "axe": {
+        "tier": "HT4",
+        "updated_at": "2026-06-13T08:35:09.091182",
+        "updated_by": "chad__007"
+      },
+      "uhc": {
+        "tier": "HT4",
+        "updated_at": "2026-06-17T09:01:29.886234",
+        "updated_by": "chad__007"
+      }
+    },
+    "<@1438176960869175417>": {
+      "nethop": {
+        "tier": "LT3",
+        "updated_at": "2026-06-13T04:47:05.329878",
+        "updated_by": "im_shaddy_777"
+      },
+      "crystal": {
+        "tier": "HT4",
+        "updated_at": "2026-06-22T16:29:49.982409",
+        "updated_by": "im_shaddy_777"
+      },
+      "sword": {
+        "tier": "LT3",
+        "updated_at": "2026-06-13T04:39:26.290918",
+        "updated_by": "im_shaddy_777"
+      },
+      "lt3": {
+        "tier": "LT3",
+        "updated_at": "2026-06-13T04:39:55.286053",
+        "updated_by": "im_shaddy_777"
+      },
+      "axe": {
+        "tier": "LT4",
+        "updated_at": "2026-06-13T04:40:16.100081",
+        "updated_by": "im_shaddy_777"
+      },
+      "mace": {
+        "tier": "LT4",
+        "updated_at": "2026-06-13T04:41:01.461178",
+        "updated_by": "im_shaddy_777"
+      },
+      "pot": {
+        "tier": "LT3",
+        "updated_at": "2026-06-16T06:47:26.684301",
+        "updated_by": "ronakkumar8416"
+      },
+      "smp": {
+        "tier": "LT3",
+        "updated_at": "2026-06-30T07:20:18.279054",
+        "updated_by": "chad__007"
+      }
+    },
+    "<@1372557957874847804>": {
+      "nethop": {
+        "tier": "LT5",
+        "updated_at": "2026-06-13T04:13:56.772378",
+        "updated_by": "im_shaddy_777"
+      },
+      "mace": {
+        "tier": "LT5",
+        "updated_at": "2026-06-13T04:14:25.663176",
+        "updated_by": "im_shaddy_777"
+      },
+      "region": "AS"
+    },
+    "<@1432003317667598377>": {
+      "mace": {
+        "tier": "HT5",
+        "updated_at": "2026-06-13T04:18:52.448359",
+        "updated_by": "im_shaddy_777"
+      },
+      "sword": {
+        "tier": "LT5",
+        "updated_at": "2026-06-13T04:19:22.449085",
+        "updated_by": "im_shaddy_777"
+      },
+      "crystal": {
+        "tier": "LT5",
+        "updated_at": "2026-06-22T16:31:13.693713",
+        "updated_by": "im_shaddy_777"
+      }
+    },
+    "<@792711974286262294>": {
+      "sword": {
+        "tier": "HT3",
+        "updated_at": "2026-06-13T04:38:16.228661",
+        "updated_by": "im_shaddy_777"
+      },
+      "nethop": {
+        "tier": "HT3",
+        "updated_at": "2026-06-13T04:38:43.650340",
+        "updated_by": "im_shaddy_777"
+      },
+      "crystal": {
+        "tier": "LT3",
+        "updated_at": "2026-06-13T04:38:59.679601",
+        "updated_by": "im_shaddy_777"
+      },
+      "region": "AS",
+      "axe": {
+        "tier": "LT3",
+        "updated_at": "2026-06-21T18:32:25.595308",
+        "updated_by": "chad__007"
+      },
+      "pot": {
+        "tier": "LT3",
+        "updated_at": "2026-06-22T16:30:35.096723",
+        "updated_by": "im_shaddy_777"
+      }
+    },
+    "<@911138620725952522>": {
+      "sword": {
+        "tier": "LT3",
+        "updated_at": "2026-06-13T04:44:08.173923",
+        "updated_by": "im_shaddy_777"
+      },
+      "mace": {
+        "tier": "HT3",
+        "updated_at": "2026-06-13T04:44:39.050415",
+        "updated_by": "im_shaddy_777"
+      },
+      "nethop": {
+        "tier": "LT3",
+        "updated_at": "2026-06-13T04:45:06.493891",
+        "updated_by": "im_shaddy_777"
+      },
+      "crystal": {
+        "tier": "LT4",
+        "updated_at": "2026-06-13T04:45:22.112598",
+        "updated_by": "im_shaddy_777"
+      },
+      "smp": {
+        "tier": "HT3",
+        "updated_at": "2026-06-29T15:31:22.849007",
+        "updated_by": "chad__007"
+      },
+      "pot": {
+        "tier": "HT4",
+        "updated_at": "2026-06-15T09:15:04.469929",
+        "updated_by": "chad__007"
+      },
+      "axe": {
+        "tier": "HT3",
+        "updated_at": "2026-06-27T16:20:43.819540",
+        "updated_by": "chad__007"
+      },
+      "uhc": {
+        "tier": "LT3",
+        "updated_at": "2026-06-29T15:37:59.101563",
+        "updated_by": "chad__007"
+      }
+    },
+    "<@1504923616960319528>": {
+      "sword": {
+        "tier": "LT5",
+        "updated_at": "2026-06-13T04:12:21.558588",
+        "updated_by": "im_shaddy_777"
+      },
+      "axe": {
+        "tier": "HT5",
+        "updated_at": "2026-06-15T14:54:14.726903",
+        "updated_by": "tosu_tofu"
+      }
+    },
+    "<@1425775560658780321>": {
+      "nethop": {
+        "tier": "LT5",
+        "updated_at": "2026-06-13T04:12:51.990237",
+        "updated_by": "im_shaddy_777"
+      },
+      "region": "AS"
+    },
+    "<@1499046947707818054>": {
+      "sword": {
+        "tier": "LT5",
+        "updated_at": "2026-06-13T04:13:31.945748",
+        "updated_by": "im_shaddy_777"
+      },
+      "region": "AS"
+    },
+    "<@1475009979663777994>": {
+      "sword": {
+        "tier": "HT5",
+        "updated_at": "2026-06-13T04:15:55.027263",
+        "updated_by": "im_shaddy_777"
+      },
+      "crystal": {
+        "tier": "LT5",
+        "updated_at": "2026-06-13T04:16:30.226940",
+        "updated_by": "im_shaddy_777"
+      }
+    },
+    "<@1255556131732848642>": {
+      "sword": {
+        "tier": "HT5",
+        "updated_at": "2026-06-13T04:36:15.551061",
+        "updated_by": "im_shaddy_777"
+      },
+      "axe": {
+        "tier": "LT4",
+        "updated_at": "2026-06-13T04:36:53.541793",
+        "updated_by": "im_shaddy_777"
+      },
+      "crystal": {
+        "tier": "LT5",
+        "updated_at": "2026-06-13T04:37:21.461498",
+        "updated_by": "im_shaddy_777"
+      },
+      "region": "AS",
+      "smp": {
+        "tier": "LT4",
+        "updated_at": "2026-06-30T08:19:51.315873",
+        "updated_by": "anxull_"
+      }
+    },
+    "<@1358832542387540008>": {
+      "axe": {
+        "tier": "HT5",
+        "updated_at": "2026-06-13T12:17:18.755091",
+        "updated_by": "tosu_tofu"
+      }
+    },
+    "<@1437355384930308220>": {
+      "mace": {
+        "tier": "LT3",
+        "updated_at": "2026-06-13T10:42:04.145906",
+        "updated_by": "chad__007"
+      }
+    },
+    "<@1464309694909911101>": {
+      "axe": {
+        "tier": "LT5",
+        "updated_at": "2026-06-15T11:20:24.855361",
+        "updated_by": "tosu_tofu"
+      }
+    },
+    "<@1347974841684197521>": {
+      "sword": {
+        "tier": "LT4",
+        "updated_at": "2026-06-22T02:15:29.549476",
+        "updated_by": "im_shaddy_777"
+      }
+    },
+    "<@907613599189577738>": {
+      "crystal": {
+        "tier": "LT3",
+        "updated_at": "2026-06-22T02:49:54.981350",
+        "updated_by": "outbreak_8413"
+      }
+    },
+    "<@924938841658372157>": {
+      "uhc": {
+        "tier": "LT4",
+        "updated_at": "2026-06-27T12:18:37.283374",
+        "updated_by": "chad__007"
+      }
+    },
+    "<@1428761095744524339>": {
+      "nethop": {
+        "tier": "HT5",
+        "updated_at": "2026-06-28T06:06:08.028212",
+        "updated_by": "outbreak_8413"
+      }
+    },
+    "<@1454784089516281890>": {
+      "mace": {
+        "tier": "LT3",
+        "updated_at": "2026-06-29T05:38:22.535974",
+        "updated_by": "chad__007"
+      },
+      "uhc": {
+        "tier": "LT4",
+        "updated_at": "2026-06-29T05:47:12.605944",
+        "updated_by": "chad__007"
+      }
+    },
+    "<@1464332775250329601>": {
+      "uhc": {
+        "tier": "HT5",
+        "updated_at": "2026-06-29T07:10:36.070365",
+        "updated_by": "chad__007"
+      },
+      "axe": {
+        "tier": "LT4",
+        "updated_at": "2026-06-29T07:11:13.118645",
+        "updated_by": "chad__007"
+      },
+      "mace": {
+        "tier": "HT4",
+        "updated_at": "2026-06-29T07:14:13.375096",
+        "updated_by": "im_shaddy_777"
+      },
+      "smp": {
+        "tier": "HT5",
+        "updated_at": "2026-06-29T07:14:21.219828",
+        "updated_by": "chad__007"
+      }
+    },
+    "<@1368160511933288448>": {
+      "mace": {
+        "tier": "LT5",
+        "updated_at": "2026-06-30T07:21:23.365349",
+        "updated_by": "chad__007"
+      }
+    },
+    "<@999158007843782788>": {
+      "sword": {
+        "tier": "HT4",
+        "updated_at": "2026-07-02T12:45:40.886551",
+        "updated_by": "tosu_tofu"
+      },
+      "axe": {
+        "tier": "HT5",
+        "updated_at": "2026-07-02T12:55:24.142602",
+        "updated_by": "tosu_tofu"
+      }
+    },
+    "tousif666": {
+      "mace": {
+        "tier": "LT4",
+        "updated_at": "2026-07-02T12:46:21.048348",
+        "updated_by": "tosu_tofu"
+      }
+    }
+  },
+  "tests": [
+    {
+      "id": 3,
+      "usernamek": "jh",
+      "tester_name": "hhg",
+      "gamemode": "hgg",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "voided",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-08T10:45:18.429709"
+    },
+    {
+      "id": 5,
+      "usernamek": "jus",
+      "tester_name": "jjj",
+      "gamemode": "jj",
+      "tested_tier": "HT1",
+      "rank_before": "Unranked",
+      "result": "failed",
+      "notes": "",
+      "judged_by": "ikhanh_nhii",
+      "tested_at": "2026-06-08T11:04:16.897591"
+    },
+    {
+      "id": 6,
+      "usernamek": "<@1222973313651966075>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "SWORD",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-08T13:32:59.360069"
+    },
+    {
+      "id": 7,
+      "usernamek": "<@1222973313651966075>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "HT5",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-08T13:33:54.249976"
+    },
+    {
+      "id": 10,
+      "username": "<@1494236355063054376>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "SWORD",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-09T17:49:22.086468"
+    },
+    {
+      "id": 16,
+      "username": "<@1384922268349763664>",
+      "tester_name": "TheyCallMeVoxy",
+      "gamemode": "AXE",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-09T17:03:06.995707"
+    },
+    {
+      "id": 10,
+      "username": "<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "SWORD",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T05:51:53.975177"
+    },
+    {
+      "id": 11,
+      "username": "@<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T05:53:42.888454"
+    },
+    {
+      "id": 12,
+      "username": "<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T05:54:31.256267"
+    },
+    {
+      "id": 10,
+      "username": "<@865454514277974017>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T14:58:27.165408"
+    },
+    {
+      "id": 11,
+      "username": "<@1493700205441187970>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T14:59:12.046853"
+    },
+    {
+      "id": 12,
+      "username": "<@1438176960869175417>",
+      "tester_name": "ZENIXX",
+      "gamemode": "NETHOP",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T14:59:42.758587"
+    },
+    {
+      "id": 13,
+      "username": "<@1438176960869175417>",
+      "tester_name": "SHADDY",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T15:00:02.912881"
+    },
+    {
+      "id": 14,
+      "username": "<@1372557957874847804>",
+      "tester_name": "ZENIXX",
+      "gamemode": "NETHOP",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T15:00:34.154332"
+    },
+    {
+      "id": 15,
+      "username": "<@1432003317667598377>",
+      "tester_name": "TheyCallMeVoxy",
+      "gamemode": "MACE",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T15:01:05.418894"
+    },
+    {
+      "id": 16,
+      "username": "<@1432003317667598377>",
+      "tester_name": "ZENIXX",
+      "gamemode": "SWORD",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T15:01:57.756661"
+    },
+    {
+      "id": 17,
+      "username": "<@1372557957874847804>",
+      "tester_name": "TheyCallMeVoxy",
+      "gamemode": "MACE",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T15:02:38.531600"
+    },
+    {
+      "id": 18,
+      "username": "<@1459406264965660744>",
+      "tester_name": "SHADDY",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T15:02:53.190839"
+    },
+    {
+      "id": 19,
+      "username": "<@1459406264965660744>",
+      "tester_name": "SHADDY",
+      "gamemode": "NETHOP",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T15:03:17.048084"
+    },
+    {
+      "id": 20,
+      "username": "<@1459406264965660744>",
+      "tester_name": "SHADDY",
+      "gamemode": "AXE",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T15:03:40.089436"
+    },
+    {
+      "id": 21,
+      "username": "<@792711974286262294>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "HT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T15:04:51.092651"
+    },
+    {
+      "id": 22,
+      "username": "<@911138620725952522>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-10T15:09:28.549469"
+    },
+    {
+      "id": 23,
+      "username": "<@1504923616960319528>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:12:21.558588"
+    },
+    {
+      "id": 24,
+      "username": "<@1425775560658780321>",
+      "tester_name": "SHADDY",
+      "gamemode": "NETHOP",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:12:51.990237"
+    },
+    {
+      "id": 25,
+      "username": "<@1493700205441187970>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORE",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:13:12.126675"
+    },
+    {
+      "id": 26,
+      "username": "<@1499046947707818054>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:13:31.945748"
+    },
+    {
+      "id": 27,
+      "username": "<@1372557957874847804>",
+      "tester_name": "ZENIXX",
+      "gamemode": "NETHOP",
+      "tested_tier": "LT5",
+      "rank_before": "LT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:13:56.772378"
+    },
+    {
+      "id": 28,
+      "username": "<@1372557957874847804>",
+      "tester_name": "TheyCallMeVoxy",
+      "gamemode": "MACE",
+      "tested_tier": "LT5",
+      "rank_before": "LT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:14:25.663176"
+    },
+    {
+      "id": 29,
+      "username": "<@1475009979663777994>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:15:55.027263"
+    },
+    {
+      "id": 30,
+      "username": "<@1475009979663777994>",
+      "tester_name": "SHADDY",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:16:30.226940"
+    },
+    {
+      "id": 31,
+      "username": "<@1459406264965660744>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:17:14.702533"
+    },
+    {
+      "id": 32,
+      "username": "<@1459406264965660744>",
+      "tester_name": "SHADDY",
+      "gamemode": "MACE",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:17:25.036276"
+    },
+    {
+      "id": 33,
+      "username": "<@1459406264965660744>",
+      "tester_name": "SHADDY",
+      "gamemode": "NETHOP",
+      "tested_tier": "LT5",
+      "rank_before": "LT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:17:49.151335"
+    },
+    {
+      "id": 34,
+      "username": "<@1432003317667598377>",
+      "tester_name": "TheyCallMeVoxy",
+      "gamemode": "MACE",
+      "tested_tier": "HT5",
+      "rank_before": "HT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:18:52.448359"
+    },
+    {
+      "id": 35,
+      "username": "<@1432003317667598377>",
+      "tester_name": "ZENIXX",
+      "gamemode": "SWORD",
+      "tested_tier": "LT5",
+      "rank_before": "LT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:19:22.449085"
+    },
+    {
+      "id": 36,
+      "username": "<@1384922268349763664>",
+      "tester_name": "TheyCallMeVoxy",
+      "gamemode": "AXE",
+      "tested_tier": "HT4",
+      "rank_before": "HT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:32:19.560450"
+    },
+    {
+      "id": 37,
+      "username": "<@865454514277974017>",
+      "tester_name": "SHADDY",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:32:48.235222"
+    },
+    {
+      "id": 38,
+      "username": "<@865454514277974017>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT4",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:33:08.480451"
+    },
+    {
+      "id": 39,
+      "username": "<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "HT5",
+      "rank_before": "HT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:33:48.838002"
+    },
+    {
+      "id": 40,
+      "username": "<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "SWORD",
+      "tested_tier": "HT4",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:34:08.252497"
+    },
+    {
+      "id": 41,
+      "username": "<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "SWORD",
+      "tested_tier": "LT4",
+      "rank_before": "HT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:34:38.910494"
+    },
+    {
+      "id": 42,
+      "username": "<@1255556131732848642>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:36:15.551061"
+    },
+    {
+      "id": 43,
+      "username": "<@1255556131732848642>",
+      "tester_name": "ZENIXX",
+      "gamemode": "AXE",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:36:53.541793"
+    },
+    {
+      "id": 44,
+      "username": "<@1255556131732848642>",
+      "tester_name": "SHADDY",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:37:21.461498"
+    },
+    {
+      "id": 45,
+      "username": "<@792711974286262294>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "HT3",
+      "rank_before": "HT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:38:16.228661"
+    },
+    {
+      "id": 46,
+      "username": "<@792711974286262294>",
+      "tester_name": "SHADDY",
+      "gamemode": "NETHOP",
+      "tested_tier": "HT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:38:43.650340"
+    },
+    {
+      "id": 47,
+      "username": "<@792711974286262294>",
+      "tester_name": "SHADDY",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:38:59.679601"
+    },
+    {
+      "id": 48,
+      "username": "<@1438176960869175417>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:39:26.290918"
+    },
+    {
+      "id": 49,
+      "username": "<@1438176960869175417>",
+      "tester_name": "ZENIXX",
+      "gamemode": "LT3",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:39:55.286053"
+    },
+    {
+      "id": 50,
+      "username": "<@1438176960869175417>",
+      "tester_name": "CHAD",
+      "gamemode": "AXE",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:40:16.100081"
+    },
+    {
+      "id": 51,
+      "username": "<@1438176960869175417>",
+      "tester_name": "CHAD",
+      "gamemode": "MACE",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:41:01.461178"
+    },
+    {
+      "id": 52,
+      "username": "<@1438176960869175417>",
+      "tester_name": "SHADDY",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "LT5",
+      "rank_before": "LT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:41:37.310124"
+    },
+    {
+      "id": 53,
+      "username": "<@911138620725952522>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:44:08.173923"
+    },
+    {
+      "id": 54,
+      "username": "<@911138620725952522>",
+      "tester_name": "TheyCallMeVoxy",
+      "gamemode": "MACE",
+      "tested_tier": "HT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:44:39.050415"
+    },
+    {
+      "id": 55,
+      "username": "<@911138620725952522>",
+      "tester_name": "ZENIXX",
+      "gamemode": "NETHOP",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:45:06.493891"
+    },
+    {
+      "id": 56,
+      "username": "<@911138620725952522>",
+      "tester_name": "SHADDY",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:45:22.112598"
+    },
+    {
+      "id": 57,
+      "username": "<@1494236355063054376>",
+      "tester_name": "ZENIXX",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "HT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:46:09.403760"
+    },
+    {
+      "id": 58,
+      "username": "<@1438176960869175417>",
+      "tester_name": "ZENIXX",
+      "gamemode": "NETHOP",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T04:47:05.329878"
+    },
+    {
+      "id": 59,
+      "username": "<@865454514277974017>",
+      "tester_name": "CHAD",
+      "gamemode": "AXE",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T08:18:58.944921"
+    },
+    {
+      "id": 60,
+      "username": "<@1494236355063054376>",
+      "tester_name": "CHAD",
+      "gamemode": "AXE",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T08:20:31.130186"
+    },
+    {
+      "id": 61,
+      "username": "<@1358832542387540008>",
+      "tester_name": "CHAD",
+      "gamemode": "Axe",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-13T08:34:44.694240"
+    },
+    {
+      "id": 62,
+      "username": "<@865454514277974017>",
+      "tester_name": "CHAD",
+      "gamemode": "Axe",
+      "tested_tier": "HT4",
+      "rank_before": "HT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-13T08:35:09.091182"
+    },
+    {
+      "id": 63,
+      "username": "<@1358832542387540008>",
+      "tester_name": "CHAD",
+      "gamemode": "AXE",
+      "tested_tier": "HT5",
+      "rank_before": "HT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-13T08:45:52.153914"
+    },
+    {
+      "id": 64,
+      "username": "@TOU",
+      "tester_name": "CHAD",
+      "gamemode": "AXE",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-13T08:49:29.202743"
+    },
+    {
+      "id": 65,
+      "username": "<@1222973313651966075>",
+      "tester_name": "CHAD",
+      "gamemode": "AXE",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-13T08:50:22.445433"
+    },
+    {
+      "id": 66,
+      "username": "<@1222973313651966075>",
+      "tester_name": "CHAD",
+      "gamemode": "UHC",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-13T09:19:11.584708"
+    },
+    {
+      "id": 67,
+      "username": "<@1494236355063054376>",
+      "tester_name": "CHAD",
+      "gamemode": "UHC",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-13T10:36:32.474814"
+    },
+    {
+      "id": 68,
+      "username": "<@1437355384930308220>",
+      "tester_name": "CHAD",
+      "gamemode": "MACE",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-13T10:42:04.145906"
+    },
+    {
+      "id": 69,
+      "username": "<@1358832542387540008>",
+      "tester_name": "TOUSIF666",
+      "gamemode": "AXE",
+      "tested_tier": "LT4",
+      "rank_before": "HT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-06-13T11:59:03.543666"
+    },
+    {
+      "id": 70,
+      "username": "<@1464309694909911101>",
+      "tester_name": "TOUSIF666",
+      "gamemode": "axe",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-06-13T11:59:38.009749"
+    },
+    {
+      "id": 71,
+      "username": "<@1358832542387540008>",
+      "tester_name": "TOUSIF666",
+      "gamemode": "AXE",
+      "tested_tier": "HT5",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-06-13T12:17:18.755091"
+    },
+    {
+      "id": 72,
+      "username": "<@911138620725952522>",
+      "tester_name": "ZENIXX",
+      "gamemode": "SMP",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-15T09:06:29.874745"
+    },
+    {
+      "id": 73,
+      "username": "<@911138620725952522>",
+      "tester_name": "ZENIXX",
+      "gamemode": "Pot",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-15T09:07:20.538777"
+    },
+    {
+      "id": 74,
+      "username": "<@911138620725952522>",
+      "tester_name": "ZENIXX",
+      "gamemode": "SMP",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-15T09:14:39.293584"
+    },
+    {
+      "id": 75,
+      "username": "<@911138620725952522>",
+      "tester_name": "ZENIXX",
+      "gamemode": "Pot",
+      "tested_tier": "HT4",
+      "rank_before": "HT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-15T09:15:04.469929"
+    },
+    {
+      "id": 76,
+      "username": "<@1464309694909911101>",
+      "tester_name": "TOUSIF666",
+      "gamemode": "AXE",
+      "tested_tier": "LT5",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-06-15T11:20:24.855361"
+    },
+    {
+      "id": 77,
+      "username": "<@1504923616960319528>",
+      "tester_name": "TOUSIF666",
+      "gamemode": "AXE",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-06-15T14:54:14.726903"
+    },
+    {
+      "id": 78,
+      "username": "TheyCallMeVoxy_",
+      "tester_name": "<@792711974286262294>",
+      "gamemode": "Pot",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "anxull_",
+      "tested_at": "2026-06-16T06:41:29.618416"
+    },
+    {
+      "id": 79,
+      "username": "<@1438176960869175417>",
+      "tester_name": "<@792711974286262294>",
+      "gamemode": "Pot",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "anxull_",
+      "tested_at": "2026-06-16T06:46:17.130262"
+    },
+    {
+      "id": 80,
+      "username": "<@1438176960869175417>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "pot",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "ronakkumar8416",
+      "tested_at": "2026-06-16T06:47:26.684301"
+    },
+    {
+      "id": 81,
+      "username": "<@1494236355063054376>",
+      "tester_name": "CHAD",
+      "gamemode": "UHC",
+      "tested_tier": "HT4",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-16T07:33:45.641495"
+    },
+    {
+      "id": 82,
+      "username": "<@1494236355063054376>",
+      "tester_name": "CHAD",
+      "gamemode": "AXE",
+      "tested_tier": "LT4",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-16T07:34:24.326303"
+    },
+    {
+      "id": 83,
+      "username": "<@1494236355063054376>",
+      "tester_name": "CHAD",
+      "gamemode": "SMP",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-16T07:45:12.759061"
+    },
+    {
+      "id": 84,
+      "username": "<@1494236355063054376>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "HT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "outbreak_8413",
+      "tested_at": "2026-06-16T12:02:35.036684"
+    },
+    {
+      "id": 85,
+      "username": "<@865454514277974017>",
+      "tester_name": "CHAD",
+      "gamemode": "UHC",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-17T09:01:29.886234"
+    },
+    {
+      "id": 86,
+      "username": "<@1493700205441187970>",
+      "tester_name": "APEXX07",
+      "gamemode": "crystal",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "ronakkumar8416",
+      "tested_at": "2026-06-17T10:37:16.910393"
+    },
+    {
+      "id": 87,
+      "username": "<@792711974286262294>",
+      "tester_name": "CHAD",
+      "gamemode": "AXE",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-21T18:32:25.595308"
+    },
+    {
+      "id": 88,
+      "username": "<@1347974841684197521>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-22T02:15:29.549476"
+    },
+    {
+      "id": 89,
+      "username": "<@907613599189577738>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "outbreak_8413",
+      "tested_at": "2026-06-22T02:49:54.981350"
+    },
+    {
+      "id": 90,
+      "username": "<@1438176960869175417>",
+      "tester_name": "ZENIXX",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "HT4",
+      "rank_before": "LT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-22T16:29:49.982409"
+    },
+    {
+      "id": 91,
+      "username": "<@792711974286262294>",
+      "tester_name": "SHADDY",
+      "gamemode": "POT",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-22T16:30:35.096723"
+    },
+    {
+      "id": 92,
+      "username": "<@1432003317667598377>",
+      "tester_name": "APEXX07",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-22T16:31:13.693713"
+    },
+    {
+      "id": 93,
+      "username": "@<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-26T15:34:10.524570"
+    },
+    {
+      "id": 94,
+      "username": "<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-26T15:34:50.975840"
+    },
+    {
+      "id": 95,
+      "username": "<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "NETHOP",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-26T15:35:53.796626"
+    },
+    {
+      "id": 96,
+      "username": "@<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "POT",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-26T19:00:35.894132"
+    },
+    {
+      "id": 97,
+      "username": "<@1222973313651966075>",
+      "tester_name": "ZENIXX",
+      "gamemode": "POT",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-26T19:02:31.629802"
+    },
+    {
+      "id": 98,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADDY",
+      "gamemode": "MACE",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-27T02:37:49.273632"
+    },
+    {
+      "id": 99,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADDY",
+      "gamemode": "MACE",
+      "tested_tier": "HT1",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-27T04:53:39.808333"
+    },
+    {
+      "id": 100,
+      "username": "<@1222973313651966075>",
+      "tester_name": "CHAD",
+      "gamemode": "UHC",
+      "tested_tier": "LT4",
+      "rank_before": "HT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-27T08:49:49.946076"
+    },
+    {
+      "id": 101,
+      "username": "<@1222973313651966075>",
+      "tester_name": "CHAD",
+      "gamemode": "MACE",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-27T09:07:34.208804"
+    },
+    {
+      "id": 102,
+      "username": "<@1222973313651966075>",
+      "tester_name": "Chad",
+      "gamemode": "SMP",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-27T09:15:01.216107"
+    },
+    {
+      "id": 103,
+      "username": "<@1222973313651966075>",
+      "tester_name": "CHAD",
+      "gamemode": "UHC",
+      "tested_tier": "HT4",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-27T09:44:58.196565"
+    },
+    {
+      "id": 104,
+      "username": "<@924938841658372157>",
+      "tester_name": "CHAD",
+      "gamemode": "UHC",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-27T12:18:37.283374"
+    },
+    {
+      "id": 105,
+      "username": "<@911138620725952522>",
+      "tester_name": "ZENIX",
+      "gamemode": "AXE",
+      "tested_tier": "HT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-27T16:20:43.819540"
+    },
+    {
+      "id": 106,
+      "username": "<@1428761095744524339>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "NethOP",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "outbreak_8413",
+      "tested_at": "2026-06-28T06:06:08.028212"
+    },
+    {
+      "id": 107,
+      "username": "<@1425775560658780321>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "HT1",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-28T06:35:20.684553"
+    },
+    {
+      "id": 108,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADDY",
+      "gamemode": "MACE",
+      "tested_tier": "HT1",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-29T04:38:09.098022"
+    },
+    {
+      "id": 109,
+      "username": "<@1454784089516281890>",
+      "tester_name": "CHAD",
+      "gamemode": "MACE",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-29T05:38:22.535974"
+    },
+    {
+      "id": 110,
+      "username": "<@1454784089516281890>",
+      "tester_name": "CHAD",
+      "gamemode": "UHC",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-29T05:47:12.605944"
+    },
+    {
+      "id": 111,
+      "username": "<@1464332775250329601>",
+      "tester_name": "CHAD",
+      "gamemode": "UHC",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-29T07:10:36.070365"
+    },
+    {
+      "id": 112,
+      "username": "<@1464332775250329601>",
+      "tester_name": "CHAD",
+      "gamemode": "AXE",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-29T07:11:13.118645"
+    },
+    {
+      "id": 113,
+      "username": "<@1464332775250329601>",
+      "tester_name": "CHAD",
+      "gamemode": "MACE",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-29T07:14:13.375096"
+    },
+    {
+      "id": 114,
+      "username": "<@1464332775250329601>",
+      "tester_name": "CHAD",
+      "gamemode": "SMP",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-29T07:14:21.219828"
+    },
+    {
+      "id": 115,
+      "username": "<@911138620725952522>",
+      "tester_name": "VOXY",
+      "gamemode": "SMP",
+      "tested_tier": "HT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-29T15:31:22.849007"
+    },
+    {
+      "id": 116,
+      "username": "<@911138620725952522>",
+      "tester_name": "TOUSIF",
+      "gamemode": "UHC",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-29T15:37:59.101563"
+    },
+    {
+      "id": 117,
+      "username": "<@1494236355063054376>",
+      "tester_name": "CHAD",
+      "gamemode": "MACE",
+      "tested_tier": "HT1",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-29T15:57:42.041420"
+    },
+    {
+      "id": 118,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-30T04:22:32.789097"
+    },
+    {
+      "id": 119,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADDY",
+      "gamemode": "Sword",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-30T04:23:06.365514"
+    },
+    {
+      "id": 120,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADDY",
+      "gamemode": "MACE",
+      "tested_tier": "HT1",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-30T04:24:12.663586"
+    },
+    {
+      "id": 121,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-30T04:36:33.850856"
+    },
+    {
+      "id": 122,
+      "username": "<@1494236355063054376>",
+      "tester_name": "shaddy",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-30T04:41:17.033786"
+    },
+    {
+      "id": 123,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADDY",
+      "gamemode": "Sword",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-30T04:41:57.140047"
+    },
+    {
+      "id": 124,
+      "username": "<@1494236355063054376>",
+      "tester_name": "shaddy",
+      "gamemode": "Sword",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-30T04:42:25.569467"
+    },
+    {
+      "id": 125,
+      "username": "<@1494236355063054376>",
+      "tester_name": "shaddy",
+      "gamemode": "Sword",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-30T04:46:52.440859"
+    },
+    {
+      "id": 126,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADY",
+      "gamemode": "Sword",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-06-30T04:48:14.909050"
+    },
+    {
+      "id": 127,
+      "username": "<@1438176960869175417>",
+      "tester_name": "Chad",
+      "gamemode": "SMP",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-30T07:20:18.279054"
+    },
+    {
+      "id": 128,
+      "username": "<@1368160511933288448>",
+      "tester_name": "CHAD",
+      "gamemode": "MACE",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-06-30T07:21:23.365349"
+    },
+    {
+      "id": 129,
+      "username": "<@1255556131732848642>",
+      "tester_name": "Voxy",
+      "gamemode": "Smp",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "anxull_",
+      "tested_at": "2026-06-30T08:19:51.315873"
+    },
+    {
+      "id": 130,
+      "username": "<@999158007843782788>",
+      "tester_name": "TOUSIF666",
+      "gamemode": "sword",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-07-02T12:45:40.886551"
+    },
+    {
+      "id": 131,
+      "username": "TOUSIF666",
+      "tester_name": "<@911138620725952522>",
+      "gamemode": "mace",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-07-02T12:46:21.048348"
+    },
+    {
+      "id": 132,
+      "username": "<@999158007843782788>",
+      "tester_name": "TOUSIF666",
+      "gamemode": "axe",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-07-02T12:55:24.142602"
+    }
+  ],
+  "profiles": {
+    "1494236355063054376": {
+      "discord_id": "1494236355063054376",
+      "discord_name": "im_shaddy_777",
+      "minecraft_username": "Itzxshaddy",
+      "region": "AS",
+      "account_type": "JAVA",
+      "verified_at": "2026-06-22T03:00:33.359234",
+      "skin_url": "/skins/1494236355063054376.png"
+    },
+    "1438176960869175417": {
+      "discord_id": "1438176960869175417",
+      "discord_name": "anxull_",
+      "minecraft_username": "TheyCallMeVoxy_",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-09T15:39:12.383407",
+      "skin_url": "/skins/1438176960869175417.webp"
+    },
+    "1432003317667598377": {
+      "discord_id": "1432003317667598377",
+      "discord_name": "arafytpvb",
+      "minecraft_username": "Araf8000",
+      "region": "Asia",
+      "account_type": "Bedrock",
+      "verified_at": "2026-06-08T11:06:51.338922",
+      "skin_url": "/skins/1432003317667598377.webp"
+    },
+    "1222973313651966075": {
+      "discord_id": "1222973313651966075",
+      "discord_name": "tosu_tofu",
+      "minecraft_username": "TOUSIF666",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-26T19:01:39.451242",
+      "skin_url": "/skins/1222973313651966075.webp"
+    },
+    "1437022478743638036": {
+      "discord_id": "1437022478743638036",
+      "discord_name": "tanish___18",
+      "minecraft_username": "noob_gamerzzzzzz",
+      "region": "As",
+      "account_type": "Java",
+      "verified_at": "2026-06-08T11:50:34.575373",
+      "skin_url": "/skins/1437022478743638036.webp"
+    },
+    "865454514277974017": {
+      "discord_id": "865454514277974017",
+      "discord_name": "ronakkumar8416",
+      "minecraft_username": "hackerplayzzz",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-30T06:01:36.719876"
+    },
+    "1434611390617751744": {
+      "discord_id": "1434611390617751744",
+      "discord_name": "mayurankashyap_99577",
+      "minecraft_username": "Mayurann",
+      "region": "As",
+      "account_type": "Java",
+      "verified_at": "2026-06-08T13:32:05.506814",
+      "skin_url": "/skins/1434611390617751744.webp"
+    },
+    "1464309694909911101": {
+      "discord_id": "1464309694909911101",
+      "discord_name": "ashis95",
+      "minecraft_username": "VIPER95",
+      "region": "AS",
+      "account_type": "JAVA",
+      "verified_at": "2026-06-10T04:48:43.715454",
+      "skin_url": "/skins/1464309694909911101.webp"
+    },
+    "1384922268349763664": {
+      "discord_id": "1384922268349763664",
+      "discord_name": "_jashan_dhanda",
+      "minecraft_username": "JashanJaat",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-10T05:44:20.952320",
+      "skin_url": "/skins/1384922268349763664.webp"
+    },
+    "1504923616960319528": {
+      "discord_id": "1504923616960319528",
+      "discord_name": "obito_0xy.",
+      "minecraft_username": "Obito_0zy",
+      "region": "AW",
+      "account_type": "Java",
+      "verified_at": "2026-06-10T03:28:35.175107",
+      "skin_url": "/skins/1504923616960319528.webp"
+    },
+    "1475009979663777994": {
+      "discord_id": "1475009979663777994",
+      "discord_name": "antm4n0231_85931",
+      "minecraft_username": "pe_amar",
+      "region": "Asia",
+      "account_type": "Java",
+      "verified_at": "2026-06-10T05:37:04.256349",
+      "skin_url": "/skins/1475009979663777994.webp"
+    },
+    "911138620725952522": {
+      "discord_id": "911138620725952522",
+      "discord_name": "chad__007",
+      "minecraft_username": "Chad__007",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-29T15:38:37.195804",
+      "skin_url": "/skins/911138620725952522.png"
+    },
+    "1355163646048600196": {
+      "discord_id": "1355163646048600196",
+      "discord_name": "ikhanh_nhii",
+      "minecraft_username": "SCARLETT",
+      "region": "AS",
+      "account_type": "JAVA",
+      "verified_at": "2026-06-10T18:48:48.087051",
+      "skin_url": "/skins/1355163646048600196.webp"
+    },
+    "1437355384930308220": {
+      "discord_id": "1437355384930308220",
+      "discord_name": "shaurya011",
+      "minecraft_username": "SensieDragonXD",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-13T03:59:28.419606",
+      "skin_url": "/skins/1437355384930308220.webp"
+    },
+    "847320529210703892": {
+      "discord_id": "847320529210703892",
+      "discord_name": "hypermayank007",
+      "minecraft_username": "HYPER_MAYANK_07",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-13T05:09:40.465108",
+      "skin_url": "/skins/847320529210703892.webp"
+    },
+    "1358832542387540008": {
+      "discord_id": "1358832542387540008",
+      "discord_name": "sakib94pro_",
+      "minecraft_username": "SAKIB_PLAYZ",
+      "region": "as",
+      "account_type": "java",
+      "verified_at": "2026-06-17T16:23:35.975460",
+      "skin_url": "/skins/1358832542387540008.webp"
+    },
+    "1467020829048045732": {
+      "discord_id": "1467020829048045732",
+      "discord_name": "dsxnaruto95",
+      "minecraft_username": "DsNARUTO",
+      "region": "As",
+      "account_type": "Java",
+      "verified_at": "2026-06-15T07:38:24.882566",
+      "skin_url": "/skins/1467020829048045732.webp"
+    },
+    "1451607528084607169": {
+      "discord_id": "1451607528084607169",
+      "discord_name": "ragebat._95676",
+      "minecraft_username": ".framfrags",
+      "region": "As",
+      "account_type": "Bedrock",
+      "verified_at": "2026-06-13T10:29:47.775941",
+      "skin_url": "/skins/1451607528084607169.webp"
+    },
+    "1347974841684197521": {
+      "discord_id": "1347974841684197521",
+      "discord_name": "vitamin_x_07",
+      "minecraft_username": "Vitaminx",
+      "region": "AS",
+      "account_type": "JAVA",
+      "verified_at": "2026-06-22T02:14:45.229509",
+      "skin_url": "/skins/1347974841684197521.webp"
+    },
+    "1463845067272749257": {
+      "discord_id": "1463845067272749257",
+      "discord_name": "riya_playzz.",
+      "minecraft_username": "RIYA_Playzz",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-16T06:48:51.126400",
+      "skin_url": "/skins/1463845067272749257.webp"
+    },
+    "792711974286262294": {
+      "discord_id": "792711974286262294",
+      "discord_name": "outbreak_8413",
+      "minecraft_username": "ZENIXX_GG",
+      "region": "AS",
+      "account_type": "JAVA",
+      "verified_at": "2026-06-16T11:46:02.680430",
+      "skin_url": "/skins/792711974286262294.webp"
+    },
+    "1194936249694294029": {
+      "discord_id": "1194936249694294029",
+      "discord_name": "scythenkiller0067",
+      "minecraft_username": "Progodboyz 6554",
+      "region": "Asia",
+      "account_type": "Pe",
+      "verified_at": "2026-06-17T09:03:45.319583",
+      "skin_url": "/skins/1194936249694294029.webp"
+    },
+    "924938841658372157": {
+      "discord_id": "924938841658372157",
+      "discord_name": "obsidionstare",
+      "minecraft_username": "Figther7145",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-28T17:49:00.302589",
+      "skin_url": "/skins/924938841658372157.webp"
+    },
+    "1499046947707818054": {
+      "discord_id": "1499046947707818054",
+      "discord_name": "egoistragee",
+      "minecraft_username": "EgoistRagee",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-27T15:21:11.475918",
+      "skin_url": "/skins/1499046947707818054.webp"
+    },
+    "1515422829271711825": {
+      "discord_id": "1515422829271711825",
+      "discord_name": "ayeshiii__.",
+      "minecraft_username": "67",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-27T08:07:41.162909",
+      "skin_url": "/skins/1515422829271711825.webp"
+    },
+    "1051874040949772339": {
+      "discord_id": "1051874040949772339",
+      "discord_name": "priyanshu5446",
+      "minecraft_username": "Priyanshu123c",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-27T05:35:38.480301",
+      "skin_url": "/skins/1051874040949772339.webp"
+    },
+    "1255556131732848642": {
+      "discord_id": "1255556131732848642",
+      "discord_name": "dark_soul285",
+      "minecraft_username": "DevPlayzzz",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-29T14:38:33.362056"
+    },
+    "1428761095744524339": {
+      "discord_id": "1428761095744524339",
+      "discord_name": "hzx_triple_thunder",
+      "minecraft_username": "ShadowNexion",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-28T03:57:36.750888",
+      "skin_url": "/skins/1428761095744524339.webp"
+    },
+    "1454784089516281890": {
+      "discord_id": "1454784089516281890",
+      "discord_name": "funky._.aarav",
+      "minecraft_username": "M4rpheus_",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-29T05:25:52.380189"
+    },
+    "1504876561747410945": {
+      "discord_id": "1504876561747410945",
+      "discord_name": "sl4shyyy_.",
+      "minecraft_username": "itxcreepV2_",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-29T07:01:59.537383"
+    },
+    "1464332775250329601": {
+      "discord_id": "1464332775250329601",
+      "discord_name": "itznyxxlx",
+      "minecraft_username": "Itznyx",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-29T14:13:59.633640",
+      "skin_url": "/skins/1464332775250329601.png"
+    },
+    "1460654104115154976": {
+      "discord_id": "1460654104115154976",
+      "discord_name": "meowspideryt",
+      "minecraft_username": "MeowSpider",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-06-30T05:47:02.693369"
+    },
+    "1368160511933288448": {
+      "discord_id": "1368160511933288448",
+      "discord_name": "himangshu1920",
+      "minecraft_username": "Himangshu1920",
+      "region": "AS",
+      "account_type": "Bedrock",
+      "verified_at": "2026-06-30T06:11:23.515547"
+    },
+    "1458445214858608703": {
+      "discord_id": "1458445214858608703",
+      "discord_name": "1nvincibl3e",
+      "minecraft_username": "1nvincibl3e",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-07-02T13:08:59.887497"
+    }
+  },
+  "waitlist": {
+    "SMP": [],
+    "Sword": [
+      "1494236355063054376"
+    ],
+    "NethOP": [],
+    "Mace": [
+      "1368160511933288448",
+      "1458445214858608703"
+    ],
+    "Axe": [],
+    "Pot": [],
+    "UHC": [],
+    "Vanilla": [],
+    "DIA SMP": [],
+    "CART": [],
+    "Crystal": []
+  },
+  "waitlist_channels": {
+    "CART": {
+      "channel_id": 1513489803478564914,
+      "message_id": 1513489804652707971
+    },
+    "Mace": {
+      "channel_id": 1522227621679730758,
+      "message_id": 1522227623248531497
+    },
+    "Sword": {
+      "channel_id": 1522113419183001601,
+      "message_id": 1522113421179486290
+    }
+  },
+  "waitlist_category_id": "1513162707614830612",
+  "command_roles": {
+    "submittest": "1513371570494636053",
+    "panel": "1474990136365289706",
+    "settier": "1474990136365289706",
+    "removeplayer": "1505290918952046707",
+    "clearwaitlist": "1513371570494636053",
+    "queue": "1513371570494636053",
+    "kickfromqueue": "1513371570494636053",
+    "leaderboard": "1474990136365289706",
+    "profile": "1474990338090467378",
+    "tierlist": "1505290918952046707",
+    "image": "1474990338090467378",
+    "removeplayerrole": "1513371570494636053"
+  },
+  "gamemodes": [
+    "Sword",
+    "Axe",
+    "NethOP",
+    "UHC",
+    "SMP",
+    "Pot",
+    "Mace",
+    "Crystal"
+  ],
+  "discord_names": {
+    "1222973313651966075": "tousif",
+    "1494236355063054376": "\ud835\udc7a\ud835\udc6f\ud835\udc68\ud835\udc6b\ud835\udc6b\ud835\udc80 | \ud835\udc7f\ud835\udc7f",
+    "1384922268349763664": "Dhanda \ud83c\udf99",
+    "865454514277974017": "APEXX07",
+    "1493700205441187970": "\u303d\ufe0f\u25aa\u265d\u2664\ud835\udc0a\ud835\uddee\u13a5\ud835\ude07\ud835\uddf2\u03b7\ud808\udd9c",
+    "1438176960869175417": "\ud835\udd4b\ud835\udd3c\ud835\udd4a\ud835\udd4b\ud835\udd3c\u211d | \ud835\udd4d\ud835\udd60\ud835\udd69\ud835\udd6a \ud83d\udca2",
+    "1372557957874847804": "Orewa",
+    "1432003317667598377": "araf8000\ud83e\udd47",
+    "1459406264965660744": "gojo satoru",
+    "792711974286262294": "\ud835\udc7b\ud835\udc6c\ud835\udc7a\ud835\udc7b\ud835\udc6c\ud835\udc79 | \ud835\udc81\ud835\udc6c\ud835\udc75\ud835\udc70\ud835\udc7f\ud835\udc7f \ud835\udc6e\ud835\udc6e",
+    "911138620725952522": "\u1d1b\u1d07\ua731\u1d1b\u1d07\u0280 | \u1d04\u029c\u1d00\u1d05",
+    "1504923616960319528": "Obito_0xy",
+    "1425775560658780321": "Siz",
+    "1499046947707818054": "EgoistRagee",
+    "1475009979663777994": "ANTM4N",
+    "1255556131732848642": "Rexx",
+    "1358832542387540008": "\ud835\ude4e\ud835\ude3c\ud835\ude46\ud835\ude44\ud835\ude3d_\ud835\ude4b\ud835\ude47\ud835\ude3c\ud835\ude54\ud835\ude55",
+    "1464309694909911101": "\u2601 \ud835\udc7d \ud835\udc70 \ud835\udc77 \ud835\udc6c \ud835\udc79 \u26e6",
+    "1347974841684197521": "\ud835\udc7d\ud835\udc70\ud835\udc7b\ud835\udc68\ud835\udc74\ud835\udc70\ud835\udc75  \ud835\udc7f",
+    "907613599189577738": "Yuta",
+    "924938841658372157": "L2",
+    "1428761095744524339": "\ud83d\udd39ShadowNexion",
+    "1454784089516281890": "Aarav...",
+    "1464332775250329601": "Itznyx\u2728",
+    "1368160511933288448": "Himangshu1920",
+    "999158007843782788": "Shadowyn"
+  },
+  "gamemode_roles": {
+    "Sword": "1521360610195931277",
+    "Axe": "1521361357918834769",
+    "NETHOP": "1521360966997114901",
+    "SMP": "1521361658696433715",
+    "UHC": "1521361514848714952",
+    "Pot": "1521361818239504404",
+    "Crystal": "1521362141528064191",
+    "Mace": "1521362020123803908",
+    "NethOP": "1521360966997114901"
+  }
+}
