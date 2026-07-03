@@ -421,6 +421,13 @@
         "updated_at": "2026-07-02T12:46:21.048348",
         "updated_by": "tosu_tofu"
       }
+    },
+    "<@809795886229880882>": {
+      "mace": {
+        "tier": "HT4",
+        "updated_at": "2026-07-03T08:56:09.747661",
+        "updated_by": "chad__007"
+      }
     }
   },
   "tests": [
@@ -2043,6 +2050,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-02T18:15:14.065013"
+    },
+    {
+      "id": 136,
+      "username": "<@809795886229880882>",
+      "tester_name": "Chad",
+      "gamemode": "MACE",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "chad__007",
+      "tested_at": "2026-07-03T08:56:09.747661"
     }
   ],
   "profiles": {
