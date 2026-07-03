@@ -2410,9 +2410,7 @@
     "DIA SMP": [],
     "CART": [],
     "Crystal": [],
-    "Spear": [
-      "1494236355063054376"
-    ]
+    "Spear": []
   },
   "waitlist_channels": {
     "CART": {
@@ -2426,10 +2424,6 @@
     "Sword": {
       "channel_id": 1522113419183001601,
       "message_id": 1522113421179486290
-    },
-    "Spear": {
-      "channel_id": 1522503647919865856,
-      "message_id": 1522503649723420713
     }
   },
   "waitlist_category_id": "1513162707614830612",
