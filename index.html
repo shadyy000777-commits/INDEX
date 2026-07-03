@@ -310,16 +310,22 @@
       display: flex; align-items: center; gap: 6px;
       cursor: pointer;
       transition: border-color 0.15s;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
     }
     .server-ip-val:hover { border-color: var(--violet-lt); }
+    .server-ip-val:focus, .server-ip-val:focus-visible, .server-ip-val:active { outline: none; -webkit-tap-highlight-color: transparent; }
     .discord-btn {
       background: #5865F2; border-radius: 8px;
       width: 28px; height: 28px;
       display: flex; align-items: center; justify-content: center;
       cursor: pointer; text-decoration: none;
       transition: opacity 0.15s;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
     }
     .discord-btn:hover { opacity: 0.85; }
+    .discord-btn:focus, .discord-btn:focus-visible, .discord-btn:active { outline: none; -webkit-tap-highlight-color: transparent; }
     .discord-btn svg { width: 16px; height: 16px; fill: #fff; }
 
     /* ── TABLE HEADER ── */
