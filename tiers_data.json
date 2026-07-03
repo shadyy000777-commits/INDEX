@@ -2526,6 +2526,14 @@
       "region": "AS",
       "account_type": "Java",
       "verified_at": "2026-07-03T16:52:43.826507"
+    },
+    "1306901054494871612": {
+      "discord_id": "1306901054494871612",
+      "discord_name": "ryuissigma",
+      "minecraft_username": "043987654468092",
+      "region": "EU",
+      "account_type": "Java",
+      "verified_at": "2026-07-03T16:53:36.407353"
     }
   },
   "waitlist": {
@@ -2557,7 +2565,9 @@
       "1494236355063054376",
       "1461637071646232760"
     ],
-    "UHC": [],
+    "UHC": [
+      "1461637071646232760"
+    ],
     "Vanilla": [],
     "DIA SMP": [],
     "CART": [],
