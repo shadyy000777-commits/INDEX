@@ -200,8 +200,11 @@
       cursor: pointer;
       transition: border-color 0.15s, background 0.15s;
       position: relative;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
     }
     .info-btn:hover { border-color: var(--violet-lt); background: var(--surface3,#23263a); }
+    .info-btn:focus, .info-btn:focus-visible, .info-btn:active { outline: none; box-shadow: none; -webkit-tap-highlight-color: transparent; }
     .info-btn svg { width: 14px; height: 14px; color: var(--violet-lt); }
 
     /* ── Info Panel ── */
@@ -238,9 +241,12 @@
       cursor: pointer;
       transition: background 0.15s, color 0.15s;
       background: transparent; border: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
     }
     .info-tab.active { background: var(--surface2); color: var(--text); }
     .info-tab:not(.active):hover { color: var(--text); background: var(--surface3,#23263a); }
+    .info-tab:focus, .info-tab:focus-visible, .info-tab:active { outline: none; box-shadow: none; -webkit-tap-highlight-color: transparent; }
     .info-body { padding: 18px 18px 14px; max-height: 420px; overflow-y: auto; }
     .info-body h3 {
       font-size: 15px; font-weight: 700; color: var(--text);
