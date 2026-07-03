@@ -392,8 +392,8 @@
     "<@1479860922095763667>": {
       "sword": {
         "tier": "LT3",
-        "updated_at": "2026-07-03T14:33:54.710775",
-        "updated_by": "tosu_tofu"
+        "updated_at": "2026-07-03T14:35:37.969716",
+        "updated_by": "im_shaddy_777"
       }
     }
   },
@@ -2101,6 +2101,18 @@
       "notes": "",
       "judged_by": "tosu_tofu",
       "tested_at": "2026-07-03T14:33:54.710775"
+    },
+    {
+      "id": 143,
+      "username": "<@1479860922095763667>",
+      "tester_name": "TOUSIF",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-03T14:35:37.969716"
     }
   ],
   "profiles": {
