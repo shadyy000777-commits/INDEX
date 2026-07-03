@@ -36,9 +36,9 @@
         "updated_by": "im_shaddy_777"
       },
       "mace": {
-        "tier": "HT5",
-        "updated_at": "2026-06-27T09:07:34.208804",
-        "updated_by": "chad__007"
+        "tier": "LT4",
+        "updated_at": "2026-07-03T12:31:58.034352",
+        "updated_by": "im_shaddy_777"
       },
       "smp": {
         "tier": "LT4",
@@ -2051,6 +2051,18 @@
       "notes": "",
       "judged_by": "chad__007",
       "tested_at": "2026-07-03T10:24:31.989688"
+    },
+    {
+      "id": 140,
+      "username": "<@1222973313651966075>",
+      "tester_name": "CHAD",
+      "gamemode": "MACE",
+      "tested_tier": "LT4",
+      "rank_before": "HT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-03T12:31:58.034352"
     }
   ],
   "profiles": {
