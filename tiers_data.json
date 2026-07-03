@@ -381,6 +381,13 @@
         "updated_at": "2026-07-03T10:03:08.632825",
         "updated_by": "im_shaddy_777"
       }
+    },
+    "berkay6925": {
+      "sword": {
+        "tier": "LT3",
+        "updated_at": "2026-07-03T14:32:31.227563",
+        "updated_by": "tosu_tofu"
+      }
     }
   },
   "tests": [
@@ -2063,6 +2070,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-03T12:31:58.034352"
+    },
+    {
+      "id": 141,
+      "username": "berkay6925",
+      "tester_name": "TOUSIF666",
+      "gamemode": "sword",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "practice and we'll have a test real one",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-07-03T14:32:31.227563"
     }
   ],
   "profiles": {
