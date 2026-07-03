@@ -428,6 +428,13 @@
         "updated_at": "2026-07-03T08:56:09.747661",
         "updated_by": "chad__007"
       }
+    },
+    "<@1403981477305126942>": {
+      "crystal": {
+        "tier": "HT5",
+        "updated_at": "2026-07-03T10:02:50.067700",
+        "updated_by": "im_shaddy_777"
+      }
     }
   },
   "tests": [
@@ -2062,6 +2069,18 @@
       "notes": "",
       "judged_by": "chad__007",
       "tested_at": "2026-07-03T08:56:09.747661"
+    },
+    {
+      "id": 137,
+      "username": "<@1403981477305126942>",
+      "tester_name": "SHADDY",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-03T10:02:50.067700"
     }
   ],
   "profiles": {
