@@ -369,6 +369,11 @@
         "tier": "LT3",
         "updated_at": "2026-07-04T18:55:45.800061",
         "updated_by": "im_shaddy_777"
+      },
+      "smp": {
+        "tier": "LT3",
+        "updated_at": "2026-07-04T18:55:59.460398",
+        "updated_by": "im_shaddy_777"
       }
     }
   },
@@ -2136,6 +2141,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-04T18:55:45.800061"
+    },
+    {
+      "id": 148,
+      "username": "<@1512840960122294308>",
+      "tester_name": "SHADDY",
+      "gamemode": "SMP",
+      "tested_tier": "LT3",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-04T18:55:59.460398"
     }
   ],
   "profiles": {
