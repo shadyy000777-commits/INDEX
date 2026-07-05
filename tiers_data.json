@@ -2689,6 +2689,14 @@
       "region": "AS",
       "account_type": "Bedrock",
       "verified_at": "2026-07-05T09:26:50.186049"
+    },
+    "1495128184146886727": {
+      "discord_id": "1495128184146886727",
+      "discord_name": "zimplayzyt",
+      "minecraft_username": "ZimPlayzYt",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-07-05T14:50:28.449065"
     }
   },
   "waitlist": {
