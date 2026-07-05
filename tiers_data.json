@@ -393,6 +393,11 @@
         "tier": "HT5",
         "updated_at": "2026-07-05T10:49:21.225711",
         "updated_by": "tosu_tofu"
+      },
+      "nethop": {
+        "tier": "HT5",
+        "updated_at": "2026-07-05T10:57:10.319080",
+        "updated_by": "tosu_tofu"
       }
     }
   },
@@ -2208,6 +2213,18 @@
       "notes": "",
       "judged_by": "tosu_tofu",
       "tested_at": "2026-07-05T10:49:21.225711"
+    },
+    {
+      "id": 152,
+      "username": "<@1495128184146886727>",
+      "tester_name": "TOUSIF666",
+      "gamemode": "nethop",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-07-05T10:57:10.319080"
     }
   ],
   "profiles": {
