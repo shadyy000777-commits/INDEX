@@ -388,6 +388,11 @@
         "tier": "HT5",
         "updated_at": "2026-07-05T10:49:04.437884",
         "updated_by": "tosu_tofu"
+      },
+      "sword": {
+        "tier": "HT5",
+        "updated_at": "2026-07-05T10:49:21.225711",
+        "updated_by": "tosu_tofu"
       }
     }
   },
@@ -2191,6 +2196,18 @@
       "notes": "",
       "judged_by": "tosu_tofu",
       "tested_at": "2026-07-05T10:49:04.437884"
+    },
+    {
+      "id": 151,
+      "username": "<@1495128184146886727>",
+      "tester_name": "TOUSIF666",
+      "gamemode": "SWORD",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "tosu_tofu",
+      "tested_at": "2026-07-05T10:49:21.225711"
     }
   ],
   "profiles": {
