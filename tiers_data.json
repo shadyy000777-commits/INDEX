@@ -16,9 +16,9 @@
         "updated_by": "im_shaddy_777"
       },
       "axe": {
-        "tier": "LT4",
-        "updated_at": "2026-06-13T08:50:22.445433",
-        "updated_by": "chad__007"
+        "tier": "HT3",
+        "updated_at": "2026-07-05T10:57:54.465691",
+        "updated_by": "outbreak_8413"
       },
       "uhc": {
         "tier": "HT4",
@@ -2225,6 +2225,18 @@
       "notes": "",
       "judged_by": "tosu_tofu",
       "tested_at": "2026-07-05T10:57:10.319080"
+    },
+    {
+      "id": 153,
+      "username": "<@1222973313651966075>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "AXE",
+      "tested_tier": "HT3",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "outbreak_8413",
+      "tested_at": "2026-07-05T10:57:54.465691"
     }
   ],
   "profiles": {
