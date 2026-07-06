@@ -31,9 +31,9 @@
         "updated_by": "im_shaddy_777"
       },
       "pot": {
-        "tier": "LT4",
-        "updated_at": "2026-06-26T19:02:31.629802",
-        "updated_by": "im_shaddy_777"
+        "tier": "HT4",
+        "updated_at": "2026-07-06T09:37:21.474283",
+        "updated_by": "outbreak_8413"
       },
       "mace": {
         "tier": "LT4",
@@ -2295,6 +2295,18 @@
       "notes": "",
       "judged_by": "outbreak_8413",
       "tested_at": "2026-07-06T09:23:36.726280"
+    },
+    {
+      "id": 158,
+      "username": "<@1222973313651966075>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "POT",
+      "tested_tier": "HT4",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "outbreak_8413",
+      "tested_at": "2026-07-06T09:37:21.474283"
     }
   ],
   "profiles": {
