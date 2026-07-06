@@ -72,6 +72,11 @@
         "tier": "HT4",
         "updated_at": "2026-06-16T07:45:12.759061",
         "updated_by": "chad__007"
+      },
+      "nethop": {
+        "tier": "HT4",
+        "updated_at": "2026-07-06T13:49:10.798516",
+        "updated_by": "outbreak_8413"
       }
     },
     "<@1384922268349763664>": {
@@ -2307,6 +2312,18 @@
       "notes": "",
       "judged_by": "outbreak_8413",
       "tested_at": "2026-07-06T09:37:21.474283"
+    },
+    {
+      "id": 159,
+      "username": "<@1494236355063054376>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "NETHOP",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "outbreak_8413",
+      "tested_at": "2026-07-06T13:49:10.798516"
     }
   ],
   "profiles": {
