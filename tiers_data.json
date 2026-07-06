@@ -420,6 +420,11 @@
         "tier": "LT4",
         "updated_at": "2026-07-06T13:56:45.986531",
         "updated_by": "outbreak_8413"
+      },
+      "mace": {
+        "tier": "HT5",
+        "updated_at": "2026-07-06T14:45:36.873552",
+        "updated_by": "hi.diddler"
       }
     }
   },
@@ -2343,6 +2348,18 @@
       "notes": "",
       "judged_by": "outbreak_8413",
       "tested_at": "2026-07-06T13:56:45.986531"
+    },
+    {
+      "id": 161,
+      "username": "<@910803897751330826>",
+      "tester_name": "Unsteadyy_",
+      "gamemode": "Mace",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "hi.diddler",
+      "tested_at": "2026-07-06T14:45:36.873552"
     }
   ],
   "profiles": {
