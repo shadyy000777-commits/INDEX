@@ -426,6 +426,13 @@
         "updated_at": "2026-07-06T14:45:36.873552",
         "updated_by": "hi.diddler"
       }
+    },
+    "<@1121075209550712862>": {
+      "sword": {
+        "tier": "HT4",
+        "updated_at": "2026-07-06T14:45:52.258870",
+        "updated_by": "outbreak_8413"
+      }
     }
   },
   "tests": [
@@ -2360,6 +2367,18 @@
       "notes": "",
       "judged_by": "hi.diddler",
       "tested_at": "2026-07-06T14:45:36.873552"
+    },
+    {
+      "id": 162,
+      "username": "<@1121075209550712862>",
+      "tester_name": "ZENIXX_GG",
+      "gamemode": "SWORD",
+      "tested_tier": "HT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "USED PING EQUALIZER",
+      "judged_by": "outbreak_8413",
+      "tested_at": "2026-07-06T14:45:52.258870"
     }
   ],
   "profiles": {
