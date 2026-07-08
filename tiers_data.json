@@ -344,6 +344,11 @@
         "tier": "LT3",
         "updated_at": "2026-07-04T14:50:52.898542",
         "updated_by": "im_shaddy_777"
+      },
+      "axe": {
+        "tier": "LT4",
+        "updated_at": "2026-07-08T11:02:59.314681",
+        "updated_by": "ronakkumar8416"
       }
     },
     "<@1403981477305126942>": {
@@ -2379,6 +2384,18 @@
       "notes": "USED PING EQUALIZER",
       "judged_by": "outbreak_8413",
       "tested_at": "2026-07-06T14:45:52.258870"
+    },
+    {
+      "id": 163,
+      "username": "<@809795886229880882>",
+      "tester_name": "APEXX07",
+      "gamemode": "axe",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "ronakkumar8416",
+      "tested_at": "2026-07-08T11:02:59.314681"
     }
   ],
   "profiles": {
