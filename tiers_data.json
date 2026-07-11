@@ -438,6 +438,13 @@
         "updated_at": "2026-07-06T14:45:52.258870",
         "updated_by": "outbreak_8413"
       }
+    },
+    "<@1496194344120750280>": {
+      "crystal": {
+        "tier": "LT5",
+        "updated_at": "2026-07-11T04:12:49.574232",
+        "updated_by": "im_shaddy_777"
+      }
     }
   },
   "tests": [
@@ -2408,6 +2415,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-10T17:40:55.497851"
+    },
+    {
+      "id": 165,
+      "username": "<@1496194344120750280>",
+      "tester_name": "SHSDY",
+      "gamemode": "CRYSTAL",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-11T04:12:49.574232"
     }
   ],
   "profiles": {
