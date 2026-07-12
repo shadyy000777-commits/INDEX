@@ -445,6 +445,13 @@
         "updated_at": "2026-07-11T04:18:16.818071",
         "updated_by": "im_shaddy_777"
       }
+    },
+    "<@1361665980601860238>": {
+      "mace": {
+        "tier": "HT5",
+        "updated_at": "2026-07-12T17:17:02.710411",
+        "updated_by": "im_shaddy_777"
+      }
     }
   },
   "tests": [
@@ -2451,6 +2458,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-11T04:18:16.818071"
+    },
+    {
+      "id": 168,
+      "username": "<@1361665980601860238>",
+      "tester_name": "DIDDLER",
+      "gamemode": "MACE",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-12T17:17:02.710411"
     }
   ],
   "profiles": {
@@ -3122,7 +3141,8 @@
     "1451607528084607169": "\u2605Criminals\u51f8\u0fd0",
     "1495128184146886727": "ZimPlayzYt",
     "910803897751330826": "HatedGhost",
-    "1496194344120750280": "RDX_DEV_07"
+    "1496194344120750280": "RDX_DEV_07",
+    "1361665980601860238": "ARMANOP"
   },
   "gamemode_roles": {
     "Sword": "1521360610195931277",
