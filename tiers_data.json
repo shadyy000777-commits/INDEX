@@ -2976,6 +2976,15 @@
       "account_type": "Java",
       "verified_at": "2026-07-12T18:52:41.722978",
       "skin_url": ""
+    },
+    "1496194344120750280": {
+      "discord_id": "1496194344120750280",
+      "discord_name": "rdx_dev_07__07976",
+      "minecraft_username": "RDX_DEV",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-07-12T18:55:15.087793",
+      "skin_url": ""
     }
   },
   "waitlist": {
@@ -3154,7 +3163,7 @@
     "1451607528084607169": "\u2605Criminals\u51f8\u0fd0",
     "1495128184146886727": "ZimPlayzYt",
     "910803897751330826": "HatedGhost",
-    "1496194344120750280": "RDX_DEV_07",
+    "1496194344120750280": "RDX_DEV",
     "1361665980601860238": "CARTXARMAN"
   },
   "gamemode_roles": {
