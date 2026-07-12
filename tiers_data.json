@@ -449,7 +449,7 @@
     "<@1361665980601860238>": {
       "mace": {
         "tier": "HT5",
-        "updated_at": "2026-07-12T17:17:02.710411",
+        "updated_at": "2026-07-12T17:25:56.324759",
         "updated_by": "im_shaddy_777"
       }
     }
@@ -2470,6 +2470,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-12T17:17:02.710411"
+    },
+    {
+      "id": 169,
+      "username": "<@1361665980601860238>",
+      "tester_name": "DJ",
+      "gamemode": "MACE",
+      "tested_tier": "HT5",
+      "rank_before": "HT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-12T17:25:56.324759"
     }
   ],
   "profiles": {
