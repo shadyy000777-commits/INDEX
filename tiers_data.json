@@ -2967,6 +2967,15 @@
       "region": "NA",
       "account_type": "Java",
       "verified_at": "2026-07-07T21:11:56.404326"
+    },
+    "1361665980601860238": {
+      "discord_id": "1361665980601860238",
+      "discord_name": "itz_armanop1",
+      "minecraft_username": "CARTXARMAN",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-07-12T18:52:41.722978",
+      "skin_url": ""
     }
   },
   "waitlist": {
@@ -3146,7 +3155,7 @@
     "1495128184146886727": "ZimPlayzYt",
     "910803897751330826": "HatedGhost",
     "1496194344120750280": "RDX_DEV_07",
-    "1361665980601860238": "ARMANOP"
+    "1361665980601860238": "CARTXARMAN"
   },
   "gamemode_roles": {
     "Sword": "1521360610195931277",
