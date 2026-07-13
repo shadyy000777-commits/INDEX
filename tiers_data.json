@@ -448,8 +448,8 @@
     },
     "<@1491373546885349437>": {
       "sword": {
-        "tier": "HT2",
-        "updated_at": "2026-07-13T17:20:25.391036",
+        "tier": "LT5",
+        "updated_at": "2026-07-13T17:34:09.001382",
         "updated_by": "im_shaddy_777"
       }
     }
@@ -2518,6 +2518,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-13T17:20:25.391036"
+    },
+    {
+      "id": 173,
+      "username": "<@1491373546885349437>",
+      "tester_name": "j",
+      "gamemode": "SWORD",
+      "tested_tier": "LT5",
+      "rank_before": "HT2",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-13T17:34:09.001382"
     }
   ],
   "profiles": {
