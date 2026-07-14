@@ -438,6 +438,67 @@
       font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
       text-transform: uppercase; white-space: nowrap;
     }
+    .card-skin, .gm-skin { cursor: pointer; }
+    .card-name, .gm-name { cursor: pointer; }
+    .card-name:hover, .gm-name:hover { color: var(--violet-lt); }
+
+    /* ── PROFILE MODAL ── */
+    .profile-modal-overlay {
+      position: fixed; inset: 0; background: rgba(4,4,10,0.72);
+      display: none; align-items: center; justify-content: center;
+      z-index: 1000; padding: 20px; backdrop-filter: blur(3px);
+    }
+    .profile-modal-overlay.open { display: flex; }
+    .profile-modal {
+      background: linear-gradient(180deg, var(--surface2) 0%, var(--surface) 100%);
+      border: 1px solid var(--border2); border-radius: 20px;
+      width: 100%; max-width: 380px; max-height: 88vh; overflow-y: auto;
+      position: relative; padding: 30px 26px 26px; text-align: center;
+      box-shadow: 0 24px 70px rgba(0,0,0,0.6);
+      animation: profile-pop 0.18s ease-out;
+    }
+    @keyframes profile-pop { from { transform: scale(0.94); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .profile-modal-close {
+      position: absolute; top: 14px; right: 14px; width: 34px; height: 34px;
+      border-radius: 50%; background: var(--surface3,#23263a); border: 1px solid var(--border2);
+      color: var(--text); display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 16px; line-height: 1; transition: border-color 0.15s, color 0.15s;
+    }
+    .profile-modal-close:hover { border-color: var(--violet-lt); color: var(--violet-lt); }
+    .profile-avatar-wrap {
+      width: 118px; height: 118px; border-radius: 50%; overflow: hidden;
+      margin: 0 auto 14px; border: 3px solid var(--violet-lt);
+      background: var(--surface3,#23263a);
+    }
+    .profile-avatar-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    .profile-name { font-size: 25px; font-weight: 800; color: #ffd75e; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .profile-rank-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 16px; border-radius: 999px; font-size: 13px; font-weight: 800;
+      letter-spacing: 0.02em; margin-bottom: 10px;
+    }
+    .profile-region { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 20px; }
+    .profile-section-label {
+      font-size: 11px; font-weight: 800; color: var(--muted); letter-spacing: 0.14em;
+      text-transform: uppercase; text-align: left; margin-bottom: 8px;
+    }
+    .profile-position-row {
+      display: flex; align-items: stretch; border: 1px solid var(--border2);
+      border-radius: 10px; overflow: hidden; margin-bottom: 20px; background: var(--surface2);
+    }
+    .profile-position-num {
+      display: flex; align-items: center; justify-content: center;
+      min-width: 46px; font-size: 20px; font-weight: 900; font-style: italic; color: #fff;
+      padding: 0 14px; clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%);
+      margin-right: -10px;
+    }
+    .profile-position-info {
+      flex: 1; display: flex; align-items: center; gap: 8px;
+      padding: 12px 14px 12px 22px; font-size: 14px; font-weight: 700; color: var(--text);
+    }
+    .profile-position-info .pp-points { color: var(--muted); font-weight: 600; font-size: 12px; }
+    .profile-tiers-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+
     .card-region { display: flex; align-items: center; justify-content: center; padding: 8px 6px; }
     .region-badge {
       font-size: 13px; font-weight: 900; padding: 8px 13px;
@@ -673,6 +734,9 @@
   </style>
 </head>
 <body>
+<div class="profile-modal-overlay" id="profileModalOverlay" onclick="if(event.target===this) closeProfileModal()">
+  <div class="profile-modal" id="profileModalContent"></div>
+</div>
 
 <header class="site-header">
   <div class="header-inner">
@@ -871,14 +935,76 @@
   let currentTab = 'overall';
   let searchQuery = '';
 
-  /* ── Keyboard shortcut: / focuses search ── */
+  const REGION_NAMES = {NA:'North America', EU:'Europe', AS:'Asia', ASIA:'Asia', OCE:'Oceania', SA:'South America'};
+
+  /* ── Keyboard shortcut: / focuses search, Esc closes search/modal ── */
   document.addEventListener('keydown', e => {
     if (e.key === '/' && document.activeElement !== document.getElementById('searchInput')) {
       e.preventDefault();
       document.getElementById('searchInput').focus();
     }
-    if (e.key === 'Escape') document.getElementById('searchInput').blur();
+    if (e.key === 'Escape') {
+      document.getElementById('searchInput').blur();
+      closeProfileModal();
+    }
   });
+
+  /* ── Profile modal ── */
+  function openProfileModal(name) {
+    const p = allPlayers.find(pl => pl.name.toLowerCase() === String(name).toLowerCase());
+    if (!p) return;
+    document.getElementById('profileModalContent').innerHTML = renderProfileModal(p);
+    document.getElementById('profileModalOverlay').classList.add('open');
+  }
+  function closeProfileModal() {
+    document.getElementById('profileModalOverlay').classList.remove('open');
+  }
+
+  function renderProfileModal(p) {
+    const isLocalSkin = (p.skin_url || '').startsWith('/skins/');
+    const visageUrl   = 'https://visage.surgeplay.com/full/256/' + encodeURIComponent(p.name) + '.png';
+    const crafatarUrl = 'https://crafatar.com/renders/body/' + encodeURIComponent(p.name) + '?overlay&scale=4';
+    const avatarUrl   = isLocalSkin ? p.skin_url : (p.skin_url || visageUrl);
+    const avatarFb     = isLocalSkin ? '' : (p.skin_url ? visageUrl : crafatarUrl);
+
+    const hasRank = p.overall_rank && p.overall_rank.label && p.overall_rank.label !== 'Unranked';
+    const rankEmoji = {'Conquered':'1521028405238304872','Combat Master':'1521028367812530317','Combat Ace':'1521028320446251120','Combat Specialist':'1521028343305076786','Combat Cadet':'1521028241488609371','Rookie':'1521028195514716230'};
+    const rankEmojiId = rankEmoji[p.overall_rank && p.overall_rank.label];
+    const rankColor = (hasRank && p.overall_rank.bg) || '#7c3aed';
+    const rankPillHTML = hasRank ? `<div class="profile-rank-pill" style="background:${rankColor}22;color:${rankColor};border:1px solid ${rankColor}55;">
+        ${rankEmojiId ? `<img src="https://cdn.discordapp.com/emojis/${rankEmojiId}.png" width="16" height="16" style="vertical-align:middle;">` : ''}${p.overall_rank.label}
+      </div>` : '';
+
+    const regionFull = REGION_NAMES[(p.region || '').toUpperCase()] || p.region || '';
+
+    const tiersHTML = (p.tiers || []).map(t => {
+      const imgSrc = emojiMap[t.icon] || '';
+      return `<div class="tier-badge">
+        <div class="tier-badge-icon"><img src="${imgSrc}" alt="${t.icon || ''}" width="26" height="26" style="object-fit:contain;" onerror="this.style.display='none'"></div>
+        <div class="tier-badge-label ${tierCls(t.label)}">${t.label || ''}</div>
+      </div>`;
+    }).join('');
+
+    return `
+      <div class="profile-modal-close" onclick="closeProfileModal()">✕</div>
+      <div class="profile-avatar-wrap" style="border-color:${rankColor};">
+        <img src="${avatarUrl}" data-fb="${avatarFb}" alt="${p.name}"
+          onerror="const f=this.dataset.fb;if(!this.dataset.t&&f){this.dataset.t='1';this.src=f;}else{this.style.display='none';}">
+      </div>
+      <div class="profile-name">${p.name}</div>
+      ${rankPillHTML}
+      ${regionFull ? `<div class="profile-region">${regionFull}</div>` : ''}
+      <div class="profile-section-label">Position</div>
+      <div class="profile-position-row">
+        <div class="profile-position-num" style="background:${rankColor};">${p.rank}.</div>
+        <div class="profile-position-info">
+          🏆 OVERALL <span class="pp-points">(${p.points} points)</span>
+        </div>
+      </div>
+      <div class="profile-section-label">Tiers</div>
+      <div class="profile-tiers-row">${tiersHTML}</div>
+    `;
+  }
 
   function handleSearch() {
     searchQuery = document.getElementById('searchInput').value.toLowerCase().trim();
@@ -955,7 +1081,7 @@
     return `<div class="player-card ${rc}" data-name="${p.name.toLowerCase()}">
       <div class="card-top">
         <div class="card-rank ${rc}">${p.rank}.</div>
-        <div class="card-skin ${rc}">
+        <div class="card-skin ${rc}" onclick="openProfileModal('${p.name}')">
           <img class="${isLocalSkin ? 'skin-img skin-uploaded' : 'skin-img'}"
             src="${primaryUrl}" data-fb1="${fb1}" data-fb2="${fb2}"
             onerror="const f1=this.dataset.fb1,f2=this.dataset.fb2;if(!this.dataset.try&&f1){this.dataset.try='1';this.src=f1;}else if(this.dataset.try==='1'&&f2){this.dataset.try='2';this.src=f2;}else{this.dataset.try='done';this.style.display='none';this.nextElementSibling.style.display='flex';}"
@@ -963,7 +1089,7 @@
           <div class="skin-placeholder" style="display:none">${p.name.slice(0,2).toUpperCase()}</div>
         </div>
         <div class="card-info">
-          <div class="card-name">${p.name}</div>
+          <div class="card-name" onclick="openProfileModal('${p.name}')">${p.name}</div>
           <div class="card-subtitle">
             ${rankPillHTML}
             <span class="card-subtitle-text" style="color:${subtitleFg}">${ptsText}</span>
@@ -993,13 +1119,13 @@
     return `<div class="gm-card ${rc}" data-name="${entry.username.toLowerCase()}">
       <div class="gm-rank ${rc}">${rank}.</div>
       <div class="gm-player">
-        <div class="gm-skin">
+        <div class="gm-skin" onclick="openProfileModal('${entry.username}')">
           <img class="${imgCls}" src="${primaryUrl}" data-fb1="${fb1}" data-fb2="${fb2}"
             onerror="const f1=this.dataset.fb1,f2=this.dataset.fb2;if(!this.dataset.t&&f1){this.dataset.t='1';this.src=f1;this.className='';}else if(this.dataset.t==='1'&&f2){this.dataset.t='2';this.src=f2;}else{this.style.display='none';}"
             alt="${entry.username}">
         </div>
         <div>
-          <div class="gm-name">${entry.username}</div>
+          <div class="gm-name" onclick="openProfileModal('${entry.username}')">${entry.username}</div>
           ${entry.region ? `<div class="gm-sub">${entry.region}</div>` : ''}
         </div>
       </div>
