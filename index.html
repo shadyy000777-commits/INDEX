@@ -438,9 +438,18 @@
       font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
       text-transform: uppercase; white-space: nowrap;
     }
-    .card-skin, .gm-skin { cursor: pointer; }
-    .card-name, .gm-name { cursor: pointer; }
-    .card-name:hover, .gm-name:hover { color: var(--violet-lt); }
+    .player-card, .gm-card {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+      -webkit-user-select: none; user-select: none;
+    }
+    .player-card:focus, .gm-card:focus,
+    .player-card:active, .gm-card:active,
+    .card-skin:focus, .card-name:focus, .gm-skin:focus, .gm-name:focus,
+    .card-skin:active, .card-name:active, .gm-skin:active, .gm-name:active {
+      outline: none; background: transparent; -webkit-tap-highlight-color: transparent;
+    }
 
     /* ── PROFILE MODAL ── */
     .profile-modal-overlay {
@@ -1078,10 +1087,10 @@
     const fb2 = isLocalSkin ? '' : (customSkin ? crafatarUrl : mcheadsUrl);
     const rc = rankClass(p.rank);
 
-    return `<div class="player-card ${rc}" data-name="${p.name.toLowerCase()}">
+    return `<div class="player-card ${rc}" data-name="${p.name.toLowerCase()}" onclick="openProfileModal('${p.name}')">
       <div class="card-top">
         <div class="card-rank ${rc}">${p.rank}.</div>
-        <div class="card-skin ${rc}" onclick="openProfileModal('${p.name}')">
+        <div class="card-skin ${rc}">
           <img class="${isLocalSkin ? 'skin-img skin-uploaded' : 'skin-img'}"
             src="${primaryUrl}" data-fb1="${fb1}" data-fb2="${fb2}"
             onerror="const f1=this.dataset.fb1,f2=this.dataset.fb2;if(!this.dataset.try&&f1){this.dataset.try='1';this.src=f1;}else if(this.dataset.try==='1'&&f2){this.dataset.try='2';this.src=f2;}else{this.dataset.try='done';this.style.display='none';this.nextElementSibling.style.display='flex';}"
@@ -1089,7 +1098,7 @@
           <div class="skin-placeholder" style="display:none">${p.name.slice(0,2).toUpperCase()}</div>
         </div>
         <div class="card-info">
-          <div class="card-name" onclick="openProfileModal('${p.name}')">${p.name}</div>
+          <div class="card-name">${p.name}</div>
           <div class="card-subtitle">
             ${rankPillHTML}
             <span class="card-subtitle-text" style="color:${subtitleFg}">${ptsText}</span>
@@ -1116,16 +1125,16 @@
     const imgCls      = isLocal ? 'gm-skin-local' : '';
     const tcls = tierCls(entry.tier);
     const regionClass = (entry.region || '').toUpperCase().replace(/\\s+/g,'').substring(0,4);
-    return `<div class="gm-card ${rc}" data-name="${entry.username.toLowerCase()}">
+    return `<div class="gm-card ${rc}" data-name="${entry.username.toLowerCase()}" onclick="openProfileModal('${entry.username}')">
       <div class="gm-rank ${rc}">${rank}.</div>
       <div class="gm-player">
-        <div class="gm-skin" onclick="openProfileModal('${entry.username}')">
+        <div class="gm-skin">
           <img class="${imgCls}" src="${primaryUrl}" data-fb1="${fb1}" data-fb2="${fb2}"
             onerror="const f1=this.dataset.fb1,f2=this.dataset.fb2;if(!this.dataset.t&&f1){this.dataset.t='1';this.src=f1;this.className='';}else if(this.dataset.t==='1'&&f2){this.dataset.t='2';this.src=f2;}else{this.style.display='none';}"
             alt="${entry.username}">
         </div>
         <div>
-          <div class="gm-name" onclick="openProfileModal('${entry.username}')">${entry.username}</div>
+          <div class="gm-name">${entry.username}</div>
           ${entry.region ? `<div class="gm-sub">${entry.region}</div>` : ''}
         </div>
       </div>
