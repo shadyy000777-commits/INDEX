@@ -445,6 +445,13 @@
         "updated_at": "2026-07-12T17:25:56.324759",
         "updated_by": "im_shaddy_777"
       }
+    },
+    "<@1474446412799410352>": {
+      "sword": {
+        "tier": "LT5",
+        "updated_at": "2026-07-15T17:40:49.926683",
+        "updated_by": "im_shaddy_777"
+      }
     }
   },
   "tests": [
@@ -2571,6 +2578,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-15T15:21:07.541312"
+    },
+    {
+      "id": 178,
+      "username": "<@1474446412799410352>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-15T17:40:49.926683"
     }
   ],
   "profiles": {
