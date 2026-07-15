@@ -1256,7 +1256,10 @@
         const uid = rawKey.slice(2,-1);
         if (idToProf[uid]) { const p=idToProf[uid]; return {name:p.username, region:p.region||dregion, skin_url:p.skin_url}; }
         if (discNames[uid]) return {name:discNames[uid], region:dregion, skin_url:''};
-        return null;
+        // No profile or discord name yet — still show the player with a temporary label
+        // so they appear on the leaderboard. The bot will populate discord_names on
+        // the next submittest or on_ready resolve pass.
+        return {name: `Player#${uid.slice(-4)}`, region: dregion, skin_url: ''};
       }
       for (const v of Object.values(profiles))
         if ((v.minecraft_username||'').toLowerCase()===rawKey.toLowerCase())
