@@ -346,9 +346,9 @@
         "updated_by": "im_shaddy_777"
       },
       "axe": {
-        "tier": "LT4",
-        "updated_at": "2026-07-08T11:02:59.314681",
-        "updated_by": "ronakkumar8416"
+        "tier": "LT3",
+        "updated_at": "2026-07-15T15:21:07.541312",
+        "updated_by": "im_shaddy_777"
       }
     },
     "<@1403981477305126942>": {
@@ -2547,6 +2547,30 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-14T05:49:35.257800"
+    },
+    {
+      "id": 176,
+      "username": "<@809795886229880882>",
+      "tester_name": "SHADDY",
+      "gamemode": "AXE",
+      "tested_tier": "LT3",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-15T15:07:08.914433"
+    },
+    {
+      "id": 177,
+      "username": "<@809795886229880882>",
+      "tester_name": "SHADDY",
+      "gamemode": "AXE",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-15T15:21:07.541312"
     }
   ],
   "profiles": {
