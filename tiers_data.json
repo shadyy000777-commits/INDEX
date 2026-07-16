@@ -3253,5 +3253,11 @@
     "NethOP": "1521360966997114901"
   },
   "ticket_counter": 1,
-  "temp_channels": {}
+  "temp_channels": {},
+  "private_chats": {
+    "1527172730544328736": {
+      "tester_id": 1494236355063054376,
+      "player_id": 1494236355063054376
+    }
+  }
 }
