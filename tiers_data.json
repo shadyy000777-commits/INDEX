@@ -1,6 +1,27 @@
 {
-  "players": {},
-  "tests": [],
+  "players": {
+    "<@1493700205441187970>": {
+      "mace": {
+        "tier": "HT1",
+        "updated_at": "2026-07-16T08:45:32.928623",
+        "updated_by": "im_shaddy_777"
+      }
+    }
+  },
+  "tests": [
+    {
+      "id": 1,
+      "username": "<@1493700205441187970>",
+      "tester_name": "SHADDY",
+      "gamemode": "MACE",
+      "tested_tier": "HT1",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-16T08:45:32.928623"
+    }
+  ],
   "profiles": {
     "1493700205441187970": {
       "discord_id": "1493700205441187970",
