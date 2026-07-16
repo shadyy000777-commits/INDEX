@@ -1,7 +1,2 @@
-providers = ["python"]
-
-[phases.install]
-cmds = ["pip install -r requirements-web.txt"]
-
 [start]
 cmd = "python railway_server.py"
