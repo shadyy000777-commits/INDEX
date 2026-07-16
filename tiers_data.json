@@ -3254,5 +3254,10 @@
   },
   "ticket_counter": 1,
   "temp_channels": {},
-  "private_chats": {}
+  "private_chats": {
+    "1527172850484510861": {
+      "tester_id": 1494236355063054376,
+      "player_id": 1494236355063054376
+    }
+  }
 }
