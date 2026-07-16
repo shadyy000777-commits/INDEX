@@ -973,8 +973,8 @@
     const isLocalSkin = (p.skin_url || '').startsWith('/skins/');
     const visageUrl   = 'https://visage.surgeplay.com/full/256/' + encodeURIComponent(p.name) + '.png';
     const crafatarUrl = 'https://crafatar.com/renders/body/' + encodeURIComponent(p.name) + '?overlay&scale=4';
-    const avatarUrl   = isLocalSkin ? p.skin_url : (p.skin_url || visageUrl);
-    const avatarFb     = isLocalSkin ? '' : (p.skin_url ? visageUrl : crafatarUrl);
+    const avatarUrl   = p.skin_url || '/static/default-skin.webp';
+    const avatarFb    = p.skin_url && !isLocalSkin ? visageUrl : '';
 
     const hasRank = p.overall_rank && p.overall_rank.label && p.overall_rank.label !== 'Unranked';
     const rankEmoji = {'Conquered':'1521028405238304872','Combat Master':'1521028367812530317','Combat Ace':'1521028320446251120','Combat Specialist':'1521028343305076786','Combat Cadet':'1521028241488609371','Rookie':'1521028195514716230'};
@@ -1082,9 +1082,9 @@
     const visageUrl   = 'https://visage.surgeplay.com/full/256/' + encodeURIComponent(p.name) + '.png';
     const crafatarUrl = 'https://crafatar.com/renders/body/' + encodeURIComponent(p.name) + '?overlay&scale=4';
     const mcheadsUrl  = 'https://mc-heads.co/player/' + encodeURIComponent(p.name) + '/left';
-    const primaryUrl  = isLocalSkin ? customSkin : (customSkin || visageUrl);
-    const fb1 = isLocalSkin ? '' : (customSkin ? visageUrl : crafatarUrl);
-    const fb2 = isLocalSkin ? '' : (customSkin ? crafatarUrl : mcheadsUrl);
+    const primaryUrl  = customSkin || '/static/default-skin.webp';
+    const fb1 = customSkin && !isLocalSkin ? visageUrl : '';
+    const fb2 = customSkin && !isLocalSkin ? crafatarUrl : '';
     const rc = rankClass(p.rank);
 
     return `<div class="player-card ${rc}" data-name="${p.name.toLowerCase()}" onclick="openProfileModal('${p.name}')">
@@ -1119,9 +1119,9 @@
     const isLocal     = localSkin.startsWith('/skins/');
     const visageUrl   = 'https://visage.surgeplay.com/bust/64/' + encodeURIComponent(entry.username) + '.png';
     const crafatarUrl = 'https://crafatar.com/avatars/' + encodeURIComponent(entry.username) + '?overlay&size=64';
-    const primaryUrl  = isLocal ? localSkin : visageUrl;
-    const fb1         = isLocal ? visageUrl : crafatarUrl;
-    const fb2         = isLocal ? crafatarUrl : '';
+    const primaryUrl  = localSkin || '/static/default-skin.webp';
+    const fb1         = localSkin && !isLocal ? crafatarUrl : '';
+    const fb2         = '';
     const imgCls      = isLocal ? 'gm-skin-local' : '';
     const tcls = tierCls(entry.tier);
     const regionClass = (entry.region || '').toUpperCase().replace(/\\s+/g,'').substring(0,4);
