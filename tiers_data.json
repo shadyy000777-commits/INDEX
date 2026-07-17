@@ -80,7 +80,7 @@
       },
       "mace": {
         "tier": "LT5",
-        "updated_at": "2026-07-17T10:48:41.459310",
+        "updated_at": "2026-07-17T10:52:59.506009",
         "updated_by": "im_shaddy_777"
       }
     },
@@ -2745,6 +2745,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-17T10:48:41.459310"
+    },
+    {
+      "id": 192,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADDY",
+      "gamemode": "MACE",
+      "tested_tier": "LT5",
+      "rank_before": "LT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-17T10:52:59.506009"
     }
   ],
   "profiles": {
