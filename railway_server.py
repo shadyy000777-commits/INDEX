@@ -119,8 +119,15 @@ def tiers_data():
         except Exception as e:
             print(f"[Railway] tiers_data fetch error: {e}")
             if _tiers_cache["data"] is None:
-                return make_response('{"players":{}}', 502)
-            # Serve stale cache rather than a hard error
+                # Try local seed file before giving up
+                local_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tiers_data.json")
+                if os.path.exists(local_path):
+                    with open(local_path, "rb") as f:
+                        _tiers_cache["data"] = f.read()
+                    print("[Railway] Serving local tiers_data.json seed")
+                else:
+                    return make_response('{"players":{}}', 502)
+            # Serve stale/seed cache rather than a hard error
 
     resp = make_response(_tiers_cache["data"], 200)
     resp.headers["Content-Type"] = "application/json"
