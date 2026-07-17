@@ -6,7 +6,7 @@ import urllib.request
 from flask import Flask, send_from_directory, make_response
 from waitress import serve
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder=None)
 
 GITHUB_OWNER    = "shadyy000777-commits"
 GITHUB_REPO     = "AFTERSHOCK-TIERS"
