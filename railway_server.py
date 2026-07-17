@@ -66,6 +66,8 @@ def _fetch_from_db() -> bytes | None:
     db_url = os.getenv("DATABASE_URL")
     if not db_url:
         return None
+    # psycopg2 needs postgresql://, Railway provides postgres://
+    db_url = db_url.replace("postgres://", "postgresql://", 1)
     try:
         import psycopg2
         import psycopg2.extras
