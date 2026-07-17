@@ -86,11 +86,33 @@ def _fetch_from_db() -> bytes | None:
         return None
 
 
+def _get_tiers_bytes() -> bytes | None:
+    """Return current tiers_data bytes from DB, cache, or local seed — never blocks long."""
+    db = _fetch_from_db()
+    if db:
+        return db
+    if _tiers_cache["data"]:
+        return _tiers_cache["data"]
+    local_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tiers_data.json")
+    if os.path.exists(local_path):
+        with open(local_path, "rb") as f:
+            return f.read()
+    return None
+
+
 @app.route("/")
 def index():
     html_path = os.path.join(WEBSITE_DIR, "index.html")
     with open(html_path, "r", encoding="utf-8") as f:
         content = f.read()
+
+    # Inject tiers_data directly into the page so it renders without a second request
+    data_bytes = _get_tiers_bytes()
+    if data_bytes:
+        raw_json = data_bytes.decode("utf-8", errors="replace")
+        injection = f"<script>window.__TIERS_DATA__={raw_json};</script>"
+        content = content.replace("</head>", injection + "</head>", 1)
+
     resp = make_response(content, 200)
     resp.headers["Content-Type"] = "text/html; charset=utf-8"
     resp.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
