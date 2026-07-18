@@ -441,9 +441,9 @@
     },
     "<@1474446412799410352>": {
       "axe": {
-        "tier": "HT3",
-        "updated_at": "2026-07-16T07:57:34.174078",
-        "updated_by": "tosu_tofu"
+        "tier": "LT3",
+        "updated_at": "2026-07-18T04:22:44.924558",
+        "updated_by": "im_shaddy_777"
       },
       "region": "AS"
     }
@@ -2728,6 +2728,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-18T03:43:28.778921"
+    },
+    {
+      "id": 191,
+      "username": "<@1474446412799410352>",
+      "tester_name": "SHADDY",
+      "gamemode": "AXE",
+      "tested_tier": "LT3",
+      "rank_before": "HT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-18T04:22:44.924558"
     }
   ],
   "profiles": {
