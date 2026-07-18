@@ -3588,6 +3588,15 @@
       "account_type": "Java",
       "verified_at": "2026-07-16T09:10:38.723439",
       "skin_url": ""
+    },
+    "1342707098663915563": {
+      "discord_id": "1342707098663915563",
+      "discord_name": "pride09265",
+      "minecraft_username": "GynomePresent",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-07-18T18:21:59.639830",
+      "skin_url": ""
     }
   },
   "waitlist": {
@@ -3722,7 +3731,8 @@
     "1496194344120750280": "RDX_DEV",
     "1361665980601860238": "CARTXARMAN",
     "1491373546885349437": "\ud835\udc7d\ud835\udc76\ud835\udc79\ud835\udc7b\ud835\udc6c\ud835\udc7f\ud835\udc7f",
-    "1474446412799410352": "ADAPTER"
+    "1474446412799410352": "ADAPTER",
+    "1342707098663915563": "GynomePresent"
   },
   "gamemode_roles": {
     "Sword": "1521360610195931277",
