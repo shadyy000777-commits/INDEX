@@ -49,7 +49,7 @@
     "<@1494236355063054376>": {
       "sword": {
         "tier": "LT3",
-        "updated_at": "2026-07-17T14:06:06.303000",
+        "updated_at": "2026-07-18T03:10:19.376292",
         "updated_by": "im_shaddy_777"
       },
       "bonus_points": 20,
@@ -2680,6 +2680,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-17T17:48:29.678417"
+    },
+    {
+      "id": 187,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SHADDY",
+      "gamemode": "SWORD",
+      "tested_tier": "LT3",
+      "rank_before": "LT3",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-18T03:10:19.376292"
     }
   ],
   "profiles": {
