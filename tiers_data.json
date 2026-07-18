@@ -79,8 +79,8 @@
         "updated_by": "outbreak_8413"
       },
       "mace": {
-        "tier": "LT5",
-        "updated_at": "2026-07-18T16:23:41.726133",
+        "tier": "HT1",
+        "updated_at": "2026-07-18T16:32:22.790425",
         "updated_by": "im_shaddy_777"
       }
     },
@@ -2985,6 +2985,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-18T16:23:41.726133"
+    },
+    {
+      "id": 212,
+      "username": "<@1494236355063054376>",
+      "tester_name": "he",
+      "gamemode": "MACE",
+      "tested_tier": "HT1",
+      "rank_before": "LT5",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-18T16:32:22.790425"
     }
   ],
   "profiles": {
