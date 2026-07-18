@@ -1313,27 +1313,15 @@
     return {overallOut, gmOut};
   }
 
-  function applyRawData(raw) {
-    const {overallOut, gmOut} = processRawData(raw);
-    allPlayers = overallOut.filter(isValidPlayer);
-    gmData     = gmOut;
-  }
-
   async function loadAllData(isRefresh) {
-    // On first load use server-injected data — instant, no round-trip
-    if (!isRefresh && window.__TIERS_DATA__) {
-      try {
-        applyRawData(window.__TIERS_DATA__);
-        updateTimestamp(true);
-        return;
-      } catch(e) { /* fall through to fetch */ }
-    }
     if (!isRefresh) document.getElementById('board').innerHTML = '<p style="text-align:center;color:var(--muted);padding:3rem 1rem;">Loading players...</p>';
     try {
       const res = await fetch('/tiers_data.json', { cache: 'no-store' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const raw = await res.json();
-      applyRawData(raw);
+      const {overallOut, gmOut} = processRawData(raw);
+      allPlayers = overallOut.filter(isValidPlayer);
+      gmData     = gmOut;
       updateTimestamp(true);
     } catch(err) {
       console.error('Data fetch error:', err);

@@ -1,2 +1,5 @@
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
 [start]
-cmd = "python railway_server.py"
+cmd = "python main.py"
