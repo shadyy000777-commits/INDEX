@@ -72,6 +72,11 @@
         "tier": "HT4",
         "updated_at": "2026-07-06T13:49:10.798516",
         "updated_by": "outbreak_8413"
+      },
+      "axe": {
+        "tier": "LT4",
+        "updated_at": "2026-07-19T02:33:39.880926",
+        "updated_by": "im_shaddy_777"
       }
     },
     "<@1384922268349763664>": {
@@ -3071,6 +3076,18 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-19T02:16:57.829405"
+    },
+    {
+      "id": 220,
+      "username": "<@1494236355063054376>",
+      "tester_name": "SB",
+      "gamemode": "AXE",
+      "tested_tier": "LT4",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "tested_at": "2026-07-19T02:33:39.880926"
     }
   ],
   "profiles": {
