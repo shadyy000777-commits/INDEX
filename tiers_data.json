@@ -193,6 +193,11 @@
         "tier": "LT3",
         "updated_at": "2026-06-22T16:30:35.096723",
         "updated_by": "im_shaddy_777"
+      },
+      "mace": {
+        "tier": "HT1",
+        "updated_at": "2026-07-19T03:03:15.986394",
+        "updated_by": "im_shaddy_777"
       }
     },
     "<@1255556131732848642>": {
@@ -460,6 +465,19 @@
       "notes": "",
       "judged_by": "im_shaddy_777",
       "tested_at": "2026-07-19T02:51:12.778671"
+    },
+    {
+      "id": 2,
+      "username": "<@792711974286262294>",
+      "tester_name": "SHADDY",
+      "gamemode": "MACE",
+      "tested_tier": "HT1",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "im_shaddy_777",
+      "judged_by_id": "1494236355063054376",
+      "tested_at": "2026-07-19T03:03:15.986394"
     }
   ],
   "profiles": {
