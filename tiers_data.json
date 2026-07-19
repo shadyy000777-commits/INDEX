@@ -449,8 +449,8 @@
     },
     "<@1425397951160778754>": {
       "axe": {
-        "tier": "HT4",
-        "updated_at": "2026-07-19T08:09:15.808187",
+        "tier": "LT5",
+        "updated_at": "2026-07-19T08:12:17.956163",
         "updated_by": "dark_soul285"
       }
     }
@@ -532,6 +532,19 @@
       "judged_by": "dark_soul285",
       "judged_by_id": "1255556131732848642",
       "tested_at": "2026-07-19T08:11:43.065047"
+    },
+    {
+      "id": 7,
+      "username": "<@1425397951160778754>",
+      "tester_name": "DevPlayzzz",
+      "gamemode": "AXE",
+      "tested_tier": "LT5",
+      "rank_before": "HT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "dark_soul285",
+      "judged_by_id": "1255556131732848642",
+      "tested_at": "2026-07-19T08:12:17.956163"
     }
   ],
   "profiles": {
