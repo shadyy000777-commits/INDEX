@@ -486,6 +486,19 @@
       "judged_by": "im_shaddy_777",
       "judged_by_id": "1494236355063054376",
       "tested_at": "2026-07-19T03:06:37.716788"
+    },
+    {
+      "id": 4,
+      "username": "<@1494236355063054376>",
+      "tester_name": "DevPlayzzz",
+      "gamemode": "AXE",
+      "tested_tier": "LT4",
+      "rank_before": "LT4",
+      "result": "voided",
+      "notes": "",
+      "judged_by": "dark_soul285",
+      "judged_by_id": "1255556131732848642",
+      "tested_at": "2026-07-19T08:05:43.453194"
     }
   ],
   "profiles": {
