@@ -59,9 +59,9 @@
         "updated_by": "im_shaddy_777"
       },
       "axe": {
-        "tier": "LT4",
-        "updated_at": "2026-06-16T07:34:24.326303",
-        "updated_by": "chad__007"
+        "tier": "HT4",
+        "updated_at": "2026-07-19T08:14:00.176715",
+        "updated_by": "ronakkumar8416"
       },
       "uhc": {
         "tier": "HT4",
@@ -545,6 +545,19 @@
       "judged_by": "dark_soul285",
       "judged_by_id": "1255556131732848642",
       "tested_at": "2026-07-19T08:12:17.956163"
+    },
+    {
+      "id": 8,
+      "username": "<@1494236355063054376>",
+      "tester_name": "dev",
+      "gamemode": "axe",
+      "tested_tier": "HT4",
+      "rank_before": "LT4",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "ronakkumar8416",
+      "judged_by_id": "865454514277974017",
+      "tested_at": "2026-07-19T08:14:00.176715"
     }
   ],
   "profiles": {
