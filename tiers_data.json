@@ -1079,6 +1079,15 @@
       "account_type": "Java",
       "verified_at": "2026-07-19T09:32:31.804695",
       "skin_url": ""
+    },
+    "962284579669024828": {
+      "discord_id": "962284579669024828",
+      "discord_name": "domain_gamerr",
+      "minecraft_username": "DomainGamerr",
+      "region": "AS",
+      "account_type": "Java",
+      "verified_at": "2026-07-19T10:06:26.496180",
+      "skin_url": ""
     }
   },
   "waitlist": {
@@ -1214,7 +1223,8 @@
     "1361665980601860238": "CARTXARMAN",
     "1491373546885349437": "\ud835\udc7d\ud835\udc76\ud835\udc79\ud835\udc7b\ud835\udc6c\ud835\udc7f\ud835\udc7f",
     "1474446412799410352": "ADAPTER",
-    "1087258372803403776": "Arnav718"
+    "1087258372803403776": "Arnav718",
+    "962284579669024828": "DomainGamerr"
   },
   "gamemode_roles": {
     "Sword": "1521360610195931277",
