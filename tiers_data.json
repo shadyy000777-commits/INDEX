@@ -148,6 +148,11 @@
         "tier": "LT3",
         "updated_at": "2026-06-30T07:20:18.279054",
         "updated_by": "chad__007"
+      },
+      "uhc": {
+        "tier": "HT5",
+        "updated_at": "2026-07-21T06:07:12.278868",
+        "updated_by": "ashmine_bh"
       }
     },
     "<@1432003317667598377>": {
@@ -564,6 +569,19 @@
       "judged_by": "im_shaddy_777",
       "judged_by_id": "1494236355063054376",
       "tested_at": "2026-07-21T05:02:03.345538"
+    },
+    {
+      "id": 10,
+      "username": "<@1438176960869175417>",
+      "tester_name": "Adapter",
+      "gamemode": "UHC",
+      "tested_tier": "HT5",
+      "rank_before": "Unranked",
+      "result": "passed",
+      "notes": "",
+      "judged_by": "ashmine_bh",
+      "judged_by_id": "1474446412799410352",
+      "tested_at": "2026-07-21T06:07:12.278868"
     }
   ],
   "profiles": {
